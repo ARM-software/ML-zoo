@@ -22,3 +22,4 @@
 |-----------------|---------|--------------|
 | [SSD MobileNet v1 FP32](models/object_detection/ssd_mobilenet_v1/tflite_fp32) | FP32 | TensorFlow Lite |
 | [SSD MobileNet v1 UINT8](models/object_detection/ssd_mobilenet_v1/tflite_uint8) | UINT8 | TensorFlow Lite |
+| [YOLO v3 Tiny FP32](models/object_detection/yolo_v3_tiny/tflite_fp32) | FP32 | TensorFlow Lite |
