@@ -1,0 +1,41 @@
+benchmark:
+  Google Speech Commands test set:
+    Accuracy: 94.58%
+description: 'This is a fully quantized version (asymmetrical int8) of the DS-CNN
+  Large model developed by Arm, with training checkpoints, from the Hello Edge paper.
+  Code to recreate this model can be found here: https://github.com/ARM-software/ML-examples/tree/master/tflu-kws-cortex-m'
+license:
+- Apache-2.0
+network:
+  file_size_bytes: 530688
+  filename: ds_cnn_l_quantized.tflite
+  framework: TensorFlow Lite
+  hash:
+    algorithm: sha1
+    value: abaa9d4bf8797801276c00151ee14426aa1b2dcc
+  provenance: https://github.com/ARM-software/ML-examples/tree/master/tflu-kws-cortex-m
+network_parameters:
+  input_nodes:
+  - description: The input is a processed MFCCs of shape (1, 490)
+    name: input
+    shape:
+    - 1
+    - 490
+  output_nodes:
+  - description: The probability on 12 keywords.
+    name: Identity
+    shape:
+    - 1
+    - 12
+operators:
+  TensorFlow Lite:
+  - AVERAGE_POOL_2D
+  - CONV_2D
+  - DEPTHWISE_CONV_2D
+  - DEQUANTIZE
+  - FULLY_CONNECTED
+  - QUANTIZE
+  - RELU
+  - RESHAPE
+  - SOFTMAX
+paper: https://arxiv.org/abs/1711.07128

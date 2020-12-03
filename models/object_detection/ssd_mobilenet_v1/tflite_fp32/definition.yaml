@@ -1,0 +1,51 @@
+benchmark:
+  coco_validation_2017:
+    mAP: 0.21
+description: SSD MobileNet v1 is a object detection network, that localizes and identifies
+  objects in an input image. This is a TF Lite floating point version that takes a
+  300x300 input image and outputs detections for this image. This model is trained
+  by Google.
+keywords: Object detection
+license:
+- Apache-2.0
+network:
+  file_size_bytes: 27286108
+  filename: ssd_mobilenet_v1.tflite
+  framework: TensorFlow Lite
+  hash:
+    algorithm: sha1
+    value: 5bd511fc17ec7bfe9cd0f51bdec1537b874f52d2
+  provenance: http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_coco_2018_01_28.tar.gz
+network_parameters:
+  input_nodes:
+  - description: A float input image.
+    name: normalized_input_image_tensor
+    shape:
+    - 1
+    - 300
+    - 300
+    - 3
+  output_nodes:
+  - description: An array of num_detection box boundaries for each input in the format
+      (y1, x1, y2, x2) scaled from 0 to 1.
+    name: TFLite_Detection_PostProcess
+    shape: []
+  - description: COCO detection classes for each object. 0=person, 10=fire hydrant.
+    name: TFLite_Detection_PostProcess:1
+    shape: []
+  - description: Detection scores for each object.
+    name: TFLite_Detection_PostProcess:2
+    shape: []
+  - description: The number of objects detected in each image.
+    name: TFLite_Detection_PostProcess:3
+    shape: []
+operators:
+  TensorFlow Lite:
+  - CONCATENATION
+  - CONV_2D
+  - CUSTOM
+  - DEPTHWISE_CONV_2D
+  - LOGISTIC
+  - RELU6
+  - RESHAPE
+paper: https://arxiv.org/abs/1512.02325
