@@ -1,0 +1,38 @@
+benchmark:
+  ILSVRC 2012:
+    top_1_accuracy: 0.708
+description: MobileNet v2 is an efficient image classification neural network, targeted
+  for mobile and embedded use cases. This model is trained on the ImageNet dataset
+  and is quantized to the UINT8 datatype by Google.
+license: Apache-2.0
+network:
+  file_size_bytes: 3577760
+  filename: mobilenet_v2_1.0_224_quantized_1_default_1.tflite
+  framework: TensorFlow Lite
+  hash:
+    algorithm: sha1
+    value: 275c9649cb395139103b6d15f53011b1b949ad00
+  provenance: https://tfhub.dev/tensorflow/lite-model/mobilenet_v2_1.0_224_quantized/1/default/1
+network_parameters:
+  input_nodes:
+  - description: Single 224x224 RGB image with UINT8 values between 0 and 255
+    name: input
+    shape:
+    - 1
+    - 224
+    - 224
+    - 3
+  output_nodes:
+  - description: Per-class confidence for 1001 ImageNet classes
+    name: output
+    shape:
+    - 1
+    - 1001
+operators:
+  TensorFlow Lite:
+  - ADD
+  - AVERAGE_POOL_2D
+  - CONV_2D
+  - DEPTHWISE_CONV_2D
+  - RESHAPE
+paper: https://arxiv.org/pdf/1801.04381.pdf

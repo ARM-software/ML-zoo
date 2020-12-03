@@ -1,0 +1,50 @@
+benchmark:
+  MS COCO Validation:
+    mAP: 0.331
+description: Yolo v3 Tiny is a object detection network, that localizes and identifies
+  objects in an input image. This is a floating point version that takes a 416x416
+  input image and outputs detections for this image. This model is generated using
+  the weights from the [https://pjreddie.com/darknet/yolo/](YOLO website).
+license:
+- Apache-2.0
+network:
+  file_size_bytes: 35455980
+  filename: yolo_v3_tiny_darknet_fp32.tflite
+  framework: TensorFlow Lite
+  hash:
+    algorithm: sha1
+    value: b38f7be6856eed4466493bdc86be1879f4b743fb
+  provenance: https://pjreddie.com/media/files/yolov3-tiny.weights & https://github.com/mystic123/tensorflow-yolo-v3
+network_parameters:
+  input_nodes:
+  - description: A 416x416 floating point input image.
+    name: inputs
+    shape:
+    - 1
+    - 416
+    - 416
+    - 3
+  output_nodes:
+  - description: A 1xNx85 map of predictions, where the first 4 entries of the 3rd
+      dimension are the bounding box coordinates and the 5th is the confidence. The
+      remaining entries are softmax scores for each class.
+    name: output_boxes
+    shape:
+    - 1
+    - 2535
+    - 85
+operators:
+  TensorFlow Lite:
+  - ADD
+  - CONCATENATION
+  - CONV_2D
+  - EXP
+  - LOGISTIC
+  - MAXIMUM
+  - MAX_POOL_2D
+  - MUL
+  - RESHAPE
+  - RESIZE_NEAREST_NEIGHBOR
+  - SPLIT_V
+  - SUB
+paper: https://arxiv.org/abs/1804.02767
