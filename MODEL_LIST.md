@@ -16,3 +16,9 @@
 | [DS-CNN Large INT8](models/keyword_spotting/ds_cnn_large/tflite_int8) | INT8 | TensorFlow Lite |
 | [DS-CNN Medium INT8](models/keyword_spotting/ds_cnn_medium/tflite_int8) | INT8 | TensorFlow Lite |
 | [DS-CNN Small INT8](models/keyword_spotting/ds_cnn_small/tflite_int8) | INT8 | TensorFlow Lite |
+
+## Object Detection
+| Model Name |  Datatype  |  Framework |
+|-----------------|---------|--------------|
+| [SSD MobileNet v1 FP32](models/object_detection/ssd_mobilenet_v1/tflite_fp32) | FP32 | TensorFlow Lite |
+| [SSD MobileNet v1 UINT8](models/object_detection/ssd_mobilenet_v1/tflite_uint8) | UINT8 | TensorFlow Lite |
