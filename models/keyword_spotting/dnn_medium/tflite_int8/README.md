@@ -22,6 +22,17 @@ Dataset: Google Speech Commands Test Set
 |--------|-------|
 | Accuracy | 84.64% |
 
+## Performance
+| Platform | Optimized |
+| -------- | ---------- |
+|   CPU    |      :heavy_check_mark:      |
+|   GPU    |      :heavy_check_mark:      |
+
+### Key
+ - :heavy_check_mark: - Optimized for the platform.
+ - :heavy_minus_sign: - Not optimized, but will run on the platform.
+ - :heavy_multiplication_x: - Not optimized and will not run on the platform.
+
 ## Optimizations
 | Optimization |  Value  |
 |-----------------|---------|

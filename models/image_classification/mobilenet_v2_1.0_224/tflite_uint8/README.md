@@ -15,6 +15,17 @@ MobileNet v2 is an efficient image classification neural network, targeted for m
 |  Provenance         | https://tfhub.dev/tensorflow/lite-model/mobilenet_v2_1.0_224_quantized/1/default/1 |
 |  Paper              | https://arxiv.org/pdf/1801.04381.pdf |
 
+## Performance
+| Platform | Optimized |
+| -------- | ---------- |
+|   CPU    |      :heavy_check_mark:      |
+|   GPU    |      :heavy_check_mark:      |
+
+### Key
+ - :heavy_check_mark: - Optimized for the platform.
+ - :heavy_minus_sign: - Not optimized, but will run on the platform.
+ - :heavy_multiplication_x: - Not optimized and will not run on the platform.g
+
 ## Accuracy
 Dataset: Ilsvrc 2012
 
