@@ -19,6 +19,8 @@ network:
 network_parameters:
   input_nodes:
   - description: A float input image.
+    example_input:
+      path: models/object_detection/ssd_mobilenet_v1/tflite_fp32/testing_input/normalized_input_image_tensor
     name: normalized_input_image_tensor
     shape:
     - 1
@@ -30,15 +32,19 @@ network_parameters:
       (y1, x1, y2, x2) scaled from 0 to 1.
     name: TFLite_Detection_PostProcess
     shape: []
+    test_output_path: models/object_detection/ssd_mobilenet_v1/tflite_fp32/testing_output/TFLite_Detection_PostProcess
   - description: COCO detection classes for each object. 0=person, 10=fire hydrant.
     name: TFLite_Detection_PostProcess:1
     shape: []
+    test_output_path: models/object_detection/ssd_mobilenet_v1/tflite_fp32/testing_output/TFLite_Detection_PostProcess:1
   - description: Detection scores for each object.
     name: TFLite_Detection_PostProcess:2
     shape: []
+    test_output_path: models/object_detection/ssd_mobilenet_v1/tflite_fp32/testing_output/TFLite_Detection_PostProcess:2
   - description: The number of objects detected in each image.
     name: TFLite_Detection_PostProcess:3
     shape: []
+    test_output_path: models/object_detection/ssd_mobilenet_v1/tflite_fp32/testing_output/TFLite_Detection_PostProcess:3
 operators:
   TensorFlow Lite:
   - CONCATENATION

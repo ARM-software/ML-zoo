@@ -16,6 +16,8 @@ network:
 network_parameters:
   input_nodes:
   - description: Single 224x224 RGB image with UINT8 values between 0 and 255
+    example_input:
+      path: models/image_classification/mobilenet_v2_1.0_224/tflite_uint8/testing_input/input
     name: input
     shape:
     - 1
@@ -28,6 +30,7 @@ network_parameters:
     shape:
     - 1
     - 1001
+    test_output_path: models/image_classification/mobilenet_v2_1.0_224/tflite_uint8/testing_output/output
 operators:
   TensorFlow Lite:
   - ADD

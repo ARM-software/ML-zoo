@@ -17,6 +17,8 @@ network:
 network_parameters:
   input_nodes:
   - description: The input is a processed MFCCs of shape (1, 490)
+    example_input:
+      path: models/keyword_spotting/ds_cnn_medium/tflite_int8/testing_input/input
     name: input
     shape:
     - 1
@@ -27,6 +29,7 @@ network_parameters:
     shape:
     - 1
     - 12
+    test_output_path: models/keyword_spotting/ds_cnn_medium/tflite_int8/testing_output/Identity
 operators:
   TensorFlow Lite:
   - AVERAGE_POOL_2D
