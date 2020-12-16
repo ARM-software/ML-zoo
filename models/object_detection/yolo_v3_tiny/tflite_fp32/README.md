@@ -42,3 +42,7 @@ Dataset: MS COCO Validation
 | Output Node Name |  Shape  | Description |
 |------------------|---------|-------------|
 | output_boxes | (1, 2535, 85) | A 1xNx85 map of predictions, where the first 4 entries of the 3rd dimension are the bounding box coordinates and the 5th is the confidence. The remaining entries are softmax scores for each class. |
+
+## Sources
+- [DarkNet](https://github.com/pjreddie/darknet/blob/master/LICENSE)
+- [YOLO v3 Paper](https://arxiv.org/abs/1804.02767)
