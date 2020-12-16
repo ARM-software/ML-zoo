@@ -19,7 +19,9 @@ network:
 network_parameters:
   input_nodes:
   - description: Input RGB images (a range of 0-255 per RGB channel).
-    name: image_tensor
+    example_input:
+      path: models/object_detection/ssd_mobilenet_v1/tflite_uint8/testing_input/normalized_input_image_tensor
+    name: normalized_input_image_tensor
     shape:
     - 1
     - 300
@@ -29,15 +31,19 @@ network_parameters:
   - description: The y1, x1, y2, x2 coordinates of the bounding boxes for each detection
     name: TFLite_Detection_PostProcess
     shape: []
+    test_output_path: models/object_detection/ssd_mobilenet_v1/tflite_uint8/testing_output/TFLite_Detection_PostProcess
   - description: The class of each detection
     name: TFLite_Detection_PostProcess:1
     shape: []
+    test_output_path: models/object_detection/ssd_mobilenet_v1/tflite_uint8/testing_output/TFLite_Detection_PostProcess:1
   - description: The probability score for each classification
     name: TFLite_Detection_PostProcess:2
     shape: []
+    test_output_path: models/object_detection/ssd_mobilenet_v1/tflite_uint8/testing_output/TFLite_Detection_PostProcess:2
   - description: A vector containing a number corresponding to the number of detections
     name: TFLite_Detection_PostProcess:3
     shape: []
+    test_output_path: models/object_detection/ssd_mobilenet_v1/tflite_uint8/testing_output/TFLite_Detection_PostProcess:3
 operators:
   TensorFlow Lite:
   - CONCATENATION

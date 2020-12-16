@@ -18,6 +18,8 @@ network:
 network_parameters:
   input_nodes:
   - description: A 416x416 floating point input image.
+    example_input:
+      path: models/object_detection/yolo_v3_tiny/tflite_fp32/testing_input/inputs
     name: inputs
     shape:
     - 1
@@ -33,6 +35,7 @@ network_parameters:
     - 1
     - 2535
     - 85
+    test_output_path: models/object_detection/yolo_v3_tiny/tflite_fp32/testing_output/output_boxes
 operators:
   TensorFlow Lite:
   - ADD

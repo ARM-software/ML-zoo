@@ -30,7 +30,7 @@ Dataset: Coco Validation 2017
 ## Network Inputs
 | Input Node Name |  Shape  | Description |
 |-----------------|---------|-------------|
-| image_tensor | (1, 300, 300, 3) | Input RGB images (a range of 0-255 per RGB channel). |
+| normalized_input_image_tensor | (1, 300, 300, 3) | Input RGB images (a range of 0-255 per RGB channel). |
 
 ## Network Outputs
 | Output Node Name |  Shape  | Description |
