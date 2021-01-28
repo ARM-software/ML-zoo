@@ -1,0 +1,46 @@
+benchmark:
+  SpeechCommands:
+    top_1_accuracy: 0.94701
+description: 'This is a clustered (32 clusters, kmeans++ centroid initialization), retrained (fine-tuned) and fully quantized version (INT8)
+  of the DS-CNN Large model developed by Arm from the Hello Edge paper. Code for the original DS-CNN implementation 
+  can be found here: https://github.com/ARM-software/ML-KWS-for-MCU. 
+  The original model was converted to Keras, optimized using the Clustering API in TensorFlow Model Optimization Toolkit, and quantized using post-training quantization in the TF Lite Converter.'
+license:
+- Apache-2.0
+network:
+  file_size_bytes: 526192
+  filename: ds_cnn_clustered_int8.tflite
+  framework: TensorFlow Lite
+  hash:
+    algorithm: sha1
+    value: 367391990618e4e9a821a847dcbf3fe129212282
+  provenance: The original model (before clustering) is a pretrained checkpoint based on https://github.com/ARM-software/ML-KWS-for-MCU
+network_parameters:
+  input_nodes:
+  - description: The input is a processed MFCCs of shape (1,1,49,10)
+    example_input:
+      path: models/keyword_spotting/ds_cnn_large/tflite_clustered_int8/testing_input/input_2
+    name: input_2
+    shape:
+    - 1
+    - 1
+    - 49
+    - 10
+    type: int8
+  output_nodes:
+  - description: The probability on 12 keywords.
+    name: Identity
+    shape:
+    - 1
+    - 12
+    test_output_path: models/keyword_spotting/ds_cnn_large/tflite_clustered_int8/testing_output/Identity
+operators:
+  TensorFlow Lite:
+  - AVERAGE_POOL_2D
+  - CONV_2D
+  - DEPTHWISE_CONV_2D
+  - FULLY_CONNECTED
+  - RELU
+  - RESHAPE
+  - SOFTMAX
+paper: https://arxiv.org/abs/1711.07128

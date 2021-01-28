@@ -13,6 +13,8 @@
 | [DNN Large INT8](models/keyword_spotting/dnn_large/tflite_int8) | INT8 | TensorFlow Lite |
 | [DNN Medium INT8](models/keyword_spotting/dnn_medium/tflite_int8) | INT8 | TensorFlow Lite |
 | [DNN Small INT8](models/keyword_spotting/dnn_small/tflite_int8) | INT8 | TensorFlow Lite |
+| [DS-CNN Clustered FP32](models/keyword_spotting/ds_cnn_large/tflite_clustered_fp32) | FP32 | TensorFlow Lite |
+| [DS-CNN Clustered INT8](models/keyword_spotting/ds_cnn_large/tflite_clustered_int8) | INT8 | TensorFlow Lite |
 | [DS-CNN Large INT8](models/keyword_spotting/ds_cnn_large/tflite_int8) | INT8 | TensorFlow Lite |
 | [DS-CNN Medium INT8](models/keyword_spotting/ds_cnn_medium/tflite_int8) | INT8 | TensorFlow Lite |
 | [DS-CNN Small INT8](models/keyword_spotting/ds_cnn_small/tflite_int8) | INT8 | TensorFlow Lite |
