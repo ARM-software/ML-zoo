@@ -1,0 +1,42 @@
+benchmark:
+  LibriSpeech:
+    LER: 0.08771
+description: Wav2letter is a convolutional speech recognition neural network. This
+  implementation was created by Arm and quantized to the INT8 datatype.
+license:
+- Apache-2.0
+network:
+  file_size_bytes: 23815520
+  filename: wav2letter_int8.tflite
+  framework: TensorFlow Lite
+  hash:
+    algorithm: sha1
+    value: 481b7621801363b64dca2cc02b661b26866af76c
+  provenance: https://github.com/ARM-software/ML-zoo/tree/master/models/speech_recognition/wav2letter/tflite_int8
+network_parameters:
+  input_nodes:
+  - description: Speech converted to MFCCs and quantized to INT8.
+    example_input:
+      path: models/speech_recognition/wav2letter/tflite_int8/testing_input/input_2_int8
+    name: input_2_int8
+    shape:
+    - 1
+    - 296
+    - 39
+  output_nodes:
+  - description: A tensor of time and class probabilities, that represents the probability
+      of each class at each timestep. Should be passed to a decoder. For example ctc_beam_search_decoder.
+    name: Identity_int8
+    shape:
+    - 1
+    - 1
+    - 148
+    - 29
+    test_output_path: models/speech_recognition/wav2letter/tflite_int8/testing_output/Identity_int8
+operators:
+  TensorFlow Lite:
+  - CONV_2D
+  - LEAKY_RELU
+  - RESHAPE
+  - SOFTMAX
+paper: https://arxiv.org/abs/1609.03193
