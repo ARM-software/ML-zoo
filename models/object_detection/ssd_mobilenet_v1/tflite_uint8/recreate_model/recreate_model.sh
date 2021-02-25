@@ -30,3 +30,8 @@ tflite_convert --graph_def_file=tflite_graph.pb --output_file=ssd_mobilenet_v1.t
 mv ssd_mobilenet_v1.tflite ..
 
 popd
+
+cp models/research/object_detection/data/mscoco_complete_label_map.pbtxt .
+python scripts.py mscoco_complete_label_map.pbtxt
+tr -d \" < temp.txt > labelmapping.txt
+rm -rf temp.txt mscoco_complete_label_map.pbtxt
