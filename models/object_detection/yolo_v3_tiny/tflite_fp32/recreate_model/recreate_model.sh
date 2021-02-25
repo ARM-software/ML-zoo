@@ -33,5 +33,6 @@ pip install tensorflow==1.15.0
 
 tflite_convert --graph_def_file=frozen_darknet_yolov3_model.pb --output_file=yolo_v3_tiny_darknet_fp32.tflite --input_shapes=1,416,416,3 --input_arrays=inputs --output_arrays=output_boxes
 mv yolo_v3_tiny_darknet_fp32.tflite ..
+cp coco.names ../labelmapping.txt
 
 popd
