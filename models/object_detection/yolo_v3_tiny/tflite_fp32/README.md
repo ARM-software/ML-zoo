@@ -1,7 +1,7 @@
 # YOLO v3 Tiny FP32
 
 ## Description
-Yolo v3 Tiny is a object detection network, that localizes and identifies objects in an input image. This is a floating point version that takes a 416x416 input image and outputs detections for this image. This model is generated using the weights from the [https://pjreddie.com/darknet/yolo/](YOLO website).
+Yolo v3 Tiny is a object detection network, that localizes and identifies objects in an input image. This is a floating point version that takes a 416x416 input image and outputs detections for this image. This model is generated using the weights from the [YOLO website](https://pjreddie.com/darknet/yolo/).
 
 ## License
 [Apache-2.0](https://spdx.org/licenses/Apache-2.0.html)
