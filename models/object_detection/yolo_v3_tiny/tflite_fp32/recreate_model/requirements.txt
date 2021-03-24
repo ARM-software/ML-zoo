@@ -9,7 +9,7 @@ Keras-Applications==1.0.8
 Keras-Preprocessing==1.1.2
 Markdown==3.3.3
 numpy==1.19.4
-Pillow==8.0.1
+Pillow==8.1.2
 protobuf==3.14.0
 six==1.15.0
 tensorboard==1.11.0
