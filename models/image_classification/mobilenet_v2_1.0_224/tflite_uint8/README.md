@@ -17,14 +17,16 @@ MobileNet v2 is an efficient image classification neural network, targeted for m
 
 ## Performance
 | Platform | Optimized |
-| -------- | ---------- |
-|   CPU    |      :heavy_check_mark:      |
-|   GPU    |      :heavy_check_mark:      |
+|----------|:---------:|
+| Cortex-A |:heavy_check_mark:         |
+| Cortex-M |:heavy_multiplication_x:         |
+| Mali GPU |:heavy_check_mark:         |
+| Ethos U  |:heavy_check_mark:         |
 
 ### Key
- - :heavy_check_mark: - Optimized for the platform.
- - :heavy_minus_sign: - Not optimized, but will run on the platform.
- - :heavy_multiplication_x: - Not optimized and will not run on the platform.g
+* :heavy_check_mark: - Will run on this platform.
+* :heavy_multiplication_x: - Will not run on this platform.
+
 
 ## Accuracy
 Dataset: Ilsvrc 2012
