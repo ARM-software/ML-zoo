@@ -6,6 +6,10 @@ Wav2letter is a convolutional speech recognition neural network. This implementa
 ## License
 [Apache-2.0](https://spdx.org/licenses/Apache-2.0.html)
 
+## Related Materials
+### Class Labels
+The class labels associated with this model can be downloaded by running the script `get_class_labels.sh`.
+
 ## Network Information
 | Network Information |  Value         |
 |---------------------|------------------|

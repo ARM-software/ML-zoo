@@ -6,6 +6,13 @@ Yolo v3 Tiny is a object detection network, that localizes and identifies object
 ## License
 [Apache-2.0](https://spdx.org/licenses/Apache-2.0.html)
 
+## Related Materials
+### Class Labels
+The class labels associated with this model can be downloaded by running the script `get_class_labels.sh`.
+
+### Model Recreation Code
+Code to recreate this model can be found [here](recreate_model/).
+
 ## Network Information
 | Network Information |  Value         |
 |---------------------|------------------|
