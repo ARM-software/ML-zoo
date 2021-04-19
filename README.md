@@ -16,7 +16,7 @@
         <th width="100" style="text-align:left">Ethos U</th>
     </tr>
     <tr>
-        <td>[MobileNet v2 1.0 224 UINT8](models/image_classification/mobilenet_v2_1.0_224/tflite_uint8)</td>
+        <td><a href="models/image_classification/mobilenet_v2_1.0_224/tflite_uint8">MobileNet v2 1.0 224 UINT8</a></td>
         <td>UINT8</td>
         <td>TensorFlow Lite</td>
         <td align="center">:heavy_check_mark:</td>
