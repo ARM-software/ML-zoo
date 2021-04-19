@@ -1,4 +1,3 @@
-
 # Model Zoo 
 ![version](https://img.shields.io/badge/version-20.12-0091BD)
 > A collection of machine learning models optimized for Arm IP.
@@ -17,7 +16,7 @@
         <th width="100">Ethos U</th>
     </tr>
     <tr>
-        <td>[MobileNet v2 1.0 224 UINT8](models/image_classification/mobilenet_v2_1.0_224/tflite_uint8)</td>
+        <td><a href="models/image_classification/mobilenet_v2_1.0_224/tflite_uint8">MobileNet v2 1.0 224 UINT8</a></td>
         <td align="center">UINT8</td>
         <td align="center">TensorFlow Lite</td>
         <td align="center">:heavy_check_mark:</td>
@@ -40,7 +39,7 @@
         <th width="100">Ethos U</th>
     </tr>
     <tr>
-        <td>[CNN Large INT8 *](models/keyword_spotting/cnn_large/tflite_int8)</td>
+        <td><a href="models/keyword_spotting/cnn_large/tflite_int8">CNN Large INT8 *</a></td>
         <td align="center">INT8</td>
         <td align="center">TensorFlow Lite</td>
         <td align="center">:heavy_check_mark:</td>
@@ -49,7 +48,7 @@
         <td align="center">:heavy_check_mark:</td>
     </tr>
     <tr>
-        <td>[CNN Medium INT8 *](models/keyword_spotting/cnn_medium/tflite_int8)</td>
+        <td><a href="models/keyword_spotting/cnn_medium/tflite_int8">CNN Medium INT8 *</a></td>
         <td align="center">INT8</td>
         <td align="center">TensorFlow Lite</td>
         <td align="center">:heavy_check_mark:</td>
@@ -58,7 +57,7 @@
         <td align="center">:heavy_check_mark:</td>
     </tr>
     <tr>
-        <td>[CNN Small INT8 *](models/keyword_spotting/cnn_small/tflite_int8)</td>
+        <td><a href="models/keyword_spotting/cnn_small/tflite_int8">CNN Small INT8 *</a></td>
         <td align="center">INT8</td>
         <td align="center">TensorFlow Lite</td>
         <td align="center">:heavy_check_mark:</td>
@@ -67,7 +66,7 @@
         <td align="center">:heavy_check_mark:</td>
     </tr>
     <tr>
-        <td>[DNN Large INT8 *](models/keyword_spotting/dnn_large/tflite_int8)</td>
+        <td><a href="models/keyword_spotting/dnn_large/tflite_int8">DNN Large INT8 *</a></td>
         <td align="center">INT8</td>
         <td align="center">TensorFlow Lite</td>
         <td align="center">:heavy_check_mark:</td>
@@ -76,7 +75,7 @@
         <td align="center">:heavy_check_mark:</td>
     </tr>
     <tr>
-        <td>[DNN Medium INT8 *](models/keyword_spotting/dnn_medium/tflite_int8)</td>
+        <td><a href="models/keyword_spotting/dnn_medium/tflite_int8">DNN Medium INT8 *</a></td>
         <td align="center">INT8</td>
         <td align="center">TensorFlow Lite</td>
         <td align="center">:heavy_check_mark:</td>
@@ -85,7 +84,7 @@
         <td align="center">:heavy_check_mark:</td>
     </tr>
     <tr>
-        <td>[DNN Small INT8 *](models/keyword_spotting/dnn_small/tflite_int8)</td>
+        <td><a href="models/keyword_spotting/dnn_small/tflite_int8">DNN Small INT8 *</a></td>
         <td align="center">INT8</td>
         <td align="center">TensorFlow Lite</td>
         <td align="center">:heavy_check_mark:</td>
@@ -94,7 +93,7 @@
         <td align="center">:heavy_check_mark:</td>
     </tr>
     <tr>
-        <td>[DS-CNN Clustered FP32](models/keyword_spotting/ds_cnn_large/tflite_clustered_fp32)</td>
+        <td><a href="models/keyword_spotting/ds_cnn_large/tflite_clustered_fp32">DS-CNN Clustered FP32</a></td>
         <td align="center">FP32</td>
         <td align="center">TensorFlow Lite</td>
         <td align="center">:heavy_check_mark:</td>
@@ -103,7 +102,7 @@
         <td align="center">:heavy_multiplication_x:</td>
     </tr>
     <tr>
-        <td>[DS-CNN Clustered INT8](models/keyword_spotting/ds_cnn_large/tflite_clustered_int8)</td>
+        <td><a href="models/keyword_spotting/ds_cnn_large/tflite_clustered_int8">DS-CNN Clustered INT8</a></td>
         <td align="center">INT8</td>
         <td align="center">TensorFlow Lite</td>
         <td align="center">:heavy_check_mark:</td>
@@ -112,7 +111,7 @@
         <td align="center">:heavy_check_mark:</td>
     </tr>
     <tr>
-        <td>[DS-CNN Large INT8 *](models/keyword_spotting/ds_cnn_large/tflite_int8)</td>
+        <td><a href="models/keyword_spotting/ds_cnn_large/tflite_int8">DS-CNN Large INT8 *</a></td>
         <td align="center">INT8</td>
         <td align="center">TensorFlow Lite</td>
         <td align="center">:heavy_check_mark:</td>
@@ -121,7 +120,7 @@
         <td align="center">:heavy_check_mark:</td>
     </tr>
     <tr>
-        <td>[DS-CNN Medium INT8 *](models/keyword_spotting/ds_cnn_medium/tflite_int8)</td>
+        <td><a href="models/keyword_spotting/ds_cnn_medium/tflite_int8">DS-CNN Medium INT8 *</a></td>
         <td align="center">INT8</td>
         <td align="center">TensorFlow Lite</td>
         <td align="center">:heavy_check_mark:</td>
@@ -130,7 +129,7 @@
         <td align="center">:heavy_check_mark:</td>
     </tr>
     <tr>
-        <td>[DS-CNN Small INT8 *](models/keyword_spotting/ds_cnn_small/tflite_int8)</td>
+        <td><a href="models/keyword_spotting/ds_cnn_small/tflite_int8">DS-CNN Small INT8 *</a></td>
         <td align="center">INT8</td>
         <td align="center">TensorFlow Lite</td>
         <td align="center">:heavy_check_mark:</td>
@@ -153,7 +152,7 @@
         <th width="100">Ethos U</th>
     </tr>
     <tr>
-        <td>[SSD MobileNet v1 FP32 *](models/object_detection/ssd_mobilenet_v1/tflite_fp32)</td>
+        <td><a href="models/object_detection/ssd_mobilenet_v1/tflite_fp32">SSD MobileNet v1 FP32 *</a></td>
         <td align="center">FP32</td>
         <td align="center">TensorFlow Lite</td>
         <td align="center">:heavy_check_mark:</td>
@@ -162,7 +161,7 @@
         <td align="center">:heavy_multiplication_x:</td>
     </tr>
     <tr>
-        <td>[SSD MobileNet v1 UINT8 *](models/object_detection/ssd_mobilenet_v1/tflite_uint8)</td>
+        <td><a href="models/object_detection/ssd_mobilenet_v1/tflite_uint8">SSD MobileNet v1 FP32 *</a></td>
         <td align="center">UINT8</td>
         <td align="center">TensorFlow Lite</td>
         <td align="center">:heavy_check_mark:</td>
@@ -171,7 +170,7 @@
         <td align="center">:heavy_multiplication_x:</td>
     </tr>
     <tr>
-        <td>[YOLO v3 Tiny FP32 *](models/object_detection/yolo_v3_tiny/tflite_fp32)</td>
+        <td><a href="models/object_detection/yolo_v3_tiny/tflite_fp32">YOLO v3 Tiny FP32 *</a></td>
         <td align="center">FP32</td>
         <td align="center">TensorFlow Lite</td>
         <td align="center">:heavy_check_mark:</td>
@@ -194,7 +193,7 @@
         <th width="100">Ethos U</th>
     </tr>
     <tr>
-        <td>[Wav2letter INT8](models/speech_recognition/wav2letter/tflite_int8)</td>
+        <td><a href="models/speech_recognition/wav2letter/tflite_int8">Wav2letter INT8</a></td>
         <td align="center">INT8</td>
         <td align="center">TensorFlow Lite</td>
         <td align="center">:heavy_check_mark:</td>
