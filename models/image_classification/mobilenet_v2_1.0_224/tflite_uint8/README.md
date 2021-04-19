@@ -6,6 +6,10 @@ MobileNet v2 is an efficient image classification neural network, targeted for m
 ## License
 [Apache-2.0](https://spdx.org/licenses/Apache-2.0.html)
 
+## Related Materials
+### Class Labels
+The class labels associated with this model can be downloaded by running the script `get_class_labels.sh`.
+
 ## Network Information
 | Network Information |  Value         |
 |---------------------|------------------|
