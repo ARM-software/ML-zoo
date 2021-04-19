@@ -161,7 +161,7 @@
         <td align="center">:heavy_multiplication_x:</td>
     </tr>
     <tr>
-        <td><a href="models/object_detection/ssd_mobilenet_v1/tflite_uint8">SSD MobileNet v1 FP32 *</a></td>
+        <td><a href="models/object_detection/ssd_mobilenet_v1/tflite_uint8">SSD MobileNet v1 UINT8 *</a></td>
         <td align="center">UINT8</td>
         <td align="center">TensorFlow Lite</td>
         <td align="center">:heavy_check_mark:</td>
