@@ -10,6 +10,9 @@ MobileNet v2 is an efficient image classification neural network, targeted for m
 ### Class Labels
 The class labels associated with this model can be downloaded by running the script `get_class_labels.sh`.
 
+### How-To Guide
+A guide on how to deploy this model using the Arm NN SDK can be found [here](https://cms.developer.arm.com/solutions/machine-learning-on-arm/developer-material/how-to-guides/deploying-a-quantized-tensorflow-lite-mobilenet-v1-model-using-the-arm-nn-sdk).
+
 ## Network Information
 | Network Information |  Value         |
 |---------------------|------------------|

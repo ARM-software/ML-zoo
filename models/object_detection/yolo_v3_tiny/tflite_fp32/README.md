@@ -13,6 +13,9 @@ The class labels associated with this model can be downloaded by running the scr
 ### Model Recreation Code
 Code to recreate this model can be found [here](recreate_model/).
 
+### How-To Guide
+A guide on how to deploy this model using the Arm NN SDK can be found [here](https://developer.arm.com/solutions/machine-learning-on-arm/developer-material/how-to-guides/object-recognition-with-arm-nn-and-raspberry-pi).
+
 ## Network Information
 | Network Information |  Value         |
 |---------------------|------------------|
