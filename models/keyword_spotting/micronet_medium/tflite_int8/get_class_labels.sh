@@ -16,8 +16,5 @@
 
 #!/usr/bin/env bash
 
-touch ./labelmappings.txt
-echo "id0" >> labelmappings.txt
-echo "id2" >> labelmappings.txt
-echo "id4" >> labelmappings.txt
-echo "id6" >> labelmappings.txt
+wget https://raw.githubusercontent.com/ARM-software/ML-KWS-for-MCU/e9cf319e9aa2ff71d433e111477dd95329fb94cb/Pretrained_models/labels.txt
+mv labels.txt labelmappings.txt

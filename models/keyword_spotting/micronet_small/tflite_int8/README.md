@@ -1,21 +1,21 @@
-# MicroNet Medium INT8
+# MicroNet Small INT8
 
 ## Description
-This is a fully quantized version (asymmetrical int8) of the MicroNet Medium model developed by Arm, from the MicroNets paper. It is trained on the 'slide rail' task from http://dcase.community/challenge2020/task-unsupervised-detection-of-anomalous-sounds.
+This is a fully quantized version (asymmetrical int8) of the MicroNet Small model developed by Arm, from the MicroNets paper. This model is trained on the 'Google Speech Commands' dataset.
 
 ## License
 [Apache-2.0](https://spdx.org/licenses/Apache-2.0.html)
 
 ## Related Materials
 ### Class Labels
-The class labels associated with this model can be created by running the script `get_class_labels.sh`.
+The class labels associated with this model can be downloaded by running the script `get_class_labels.sh`.
 
 ## Network Information
 | Network Information |  Value         |
 |---------------------|----------------|
 |  Framework          | TensorFlow Lite |
-|  SHA-1 Hash         | ed709fccb1d57393cbc88f36da38a4ab70f97b4a |
-|  Size (Bytes)       | 463792 |
+|  SHA-1 Hash         | d13a25dbe34a0f2758879b9d3e7c7bad94c68ec7 |
+|  Size (Bytes)       | 114512 |
 |  Provenance         | https://arxiv.org/pdf/2010.11267.pdf |
 |  Paper              | https://arxiv.org/pdf/2010.11267.pdf |
 
@@ -32,11 +32,11 @@ The class labels associated with this model can be created by running the script
 * :heavy_multiplication_x: - Will not run on this platform.
 
 ## Accuracy
-Dataset: Dcase 2020 Task 2 Slide Rail
+Dataset: Google Speech Commands Test Set
 
 | Metric | Value |
 |--------|-------|
-| AUC | 0.9632 |
+| Accuracy | 95.32% |
 
 ## Optimizations
 | Optimization |  Value  |
@@ -52,8 +52,8 @@ Dataset: Dcase 2020 Task 2 Slide Rail
     </tr>
     <tr>
         <td>input</td>
-        <td>(1, 32, 32, 1)</td>
-        <td>Input is 64 steps of a Log Mel Spectrogram using 64 mels resized to 32x32.</td> 
+        <td>(1, 49, 10, 1)</td>
+        <td>A one second audio clip, converted to a 2D MFCC computed from a speech frame of length 40ms and stride 20ms.</td> 
     </tr>
 </table>
 
@@ -66,7 +66,7 @@ Dataset: Dcase 2020 Task 2 Slide Rail
     </tr>
     <tr>
         <td>Identity</td>
-        <td>(1, 8)</td>
-        <td>Raw logits corresponding to different machine IDs being anomalous</td> 
+        <td>(1, 12)</td>
+        <td>The probability on 12 keywords.</td> 
     </tr>
 </table>

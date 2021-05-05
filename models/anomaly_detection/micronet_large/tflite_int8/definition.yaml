@@ -1,25 +1,25 @@
 benchmark:
   DCASE 2020 Task 2 Slide rail:
-    AUC: 0.9632
+    AUC: 0.968
 description: This is a fully quantized version (asymmetrical int8) of the MicroNet
-  Medium model developed by Arm, from the MicroNets paper. It is trained on the 'slide
+  Large model developed by Arm, from the MicroNets paper. It is trained on the 'slide
   rail' task from http://dcase.community/challenge2020/task-unsupervised-detection-of-anomalous-sounds.
 license:
 - Apache-2.0
 network:
-  file_size_bytes: 463792
-  filename: ad_medium_int8.tflite
+  file_size_bytes: 442000
+  filename: ad_large_int8.tflite
   framework: TensorFlow Lite
   hash:
     algorithm: sha1
-    value: ed709fccb1d57393cbc88f36da38a4ab70f97b4a
+    value: 0b7e7776c79fac28c186b2ba00314a05b7faadbf
   provenance: https://arxiv.org/pdf/2010.11267.pdf
 network_parameters:
   input_nodes:
   - description: Input is 64 steps of a Log Mel Spectrogram using 64 mels resized
       to 32x32.
     example_input:
-      path: models/anomaly_detection/micronet_medium/tflite_int8/testing_input/input
+      path: models/anomaly_detection/micronet_large/tflite_int8/testing_input/input
     name: input
     shape:
     - 1
@@ -32,7 +32,7 @@ network_parameters:
     shape:
     - 1
     - 8
-    test_output_path: models/anomaly_detection/micronet_medium/tflite_int8/testing_output/Identity
+    test_output_path: models/anomaly_detection/micronet_large/tflite_int8/testing_output/Identity
 operators:
   TensorFlow Lite:
   - AVERAGE_POOL_2D

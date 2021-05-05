@@ -1,7 +1,7 @@
-# MicroNet Medium INT8
+# MicroNet Large INT8
 
 ## Description
-This is a fully quantized version (asymmetrical int8) of the MicroNet Medium model developed by Arm, from the MicroNets paper. It is trained on the 'slide rail' task from http://dcase.community/challenge2020/task-unsupervised-detection-of-anomalous-sounds.
+This is a fully quantized version (asymmetrical int8) of the MicroNet Large model developed by Arm, from the MicroNets paper. It is trained on the 'slide rail' task from http://dcase.community/challenge2020/task-unsupervised-detection-of-anomalous-sounds.
 
 ## License
 [Apache-2.0](https://spdx.org/licenses/Apache-2.0.html)
@@ -14,8 +14,8 @@ The class labels associated with this model can be created by running the script
 | Network Information |  Value         |
 |---------------------|----------------|
 |  Framework          | TensorFlow Lite |
-|  SHA-1 Hash         | ed709fccb1d57393cbc88f36da38a4ab70f97b4a |
-|  Size (Bytes)       | 463792 |
+|  SHA-1 Hash         | 0b7e7776c79fac28c186b2ba00314a05b7faadbf |
+|  Size (Bytes)       | 442000 |
 |  Provenance         | https://arxiv.org/pdf/2010.11267.pdf |
 |  Paper              | https://arxiv.org/pdf/2010.11267.pdf |
 
@@ -36,7 +36,7 @@ Dataset: Dcase 2020 Task 2 Slide Rail
 
 | Metric | Value |
 |--------|-------|
-| AUC | 0.9632 |
+| AUC | 0.968 |
 
 ## Optimizations
 | Optimization |  Value  |

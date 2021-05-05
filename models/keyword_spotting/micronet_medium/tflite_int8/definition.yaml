@@ -1,0 +1,43 @@
+benchmark:
+  Google Speech Commands test set:
+    Accuracy: 95.77%
+description: This is a fully quantized version (asymmetrical int8) of the MicroNet
+  Medium model developed by Arm, from the MicroNets paper. This model is trained on
+  the 'Google Speech Commands' dataset.
+license:
+- Apache-2.0
+network:
+  file_size_bytes: 181968
+  filename: kws_micronet_m.tflite
+  framework: TensorFlow Lite
+  hash:
+    algorithm: sha1
+    value: fd03a6b24548ea99cf487dbd682937df5718cef1
+  provenance: https://arxiv.org/pdf/2010.11267.pdf
+network_parameters:
+  input_nodes:
+  - description: A one second audio clip, converted to a 2D MFCC computed from a speech
+      frame of length 40ms and stride 20ms.
+    example_input:
+      path: models/keyword_spotting/micronet_medium/tflite_int8/testing_input/input
+    name: input
+    shape:
+    - 1
+    - 49
+    - 10
+    - 1
+  output_nodes:
+  - description: The probability on 12 keywords.
+    name: Identity
+    shape:
+    - 1
+    - 12
+    test_output_path: models/keyword_spotting/micronet_medium/tflite_int8/testing_output/Identity
+operators:
+  TensorFlow Lite:
+  - AVERAGE_POOL_2D
+  - CONV_2D
+  - DEPTHWISE_CONV_2D
+  - RELU6
+  - RESHAPE
+paper: https://arxiv.org/pdf/2010.11267.pdf
