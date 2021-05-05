@@ -2,6 +2,46 @@
 ![version](https://img.shields.io/badge/version-20.12-0091BD)
 > A collection of machine learning models optimized for Arm IP.
 
+## Anomaly Detection
+
+<table>
+    <tr>
+        <th width="250">Network</th>
+        <th width="100">Type</th>
+        <th width="160">Framework</th>
+        <th width="100">Cortex-A</th>
+        <th width="100">Cortex-M</th>
+        <th width="100">Mali GPU</th>
+        <th width="100">Ethos U</th>
+    </tr>
+    <tr>
+        <td><a href = "models/anomaly_detection/micronet_large/tflite_int8">MicroNet Large INT8</a></td>
+        <td align="center">INT8</td>
+        <td align="center">TensorFlow Lite</td>
+        <td align="center">:heavy_multiplication_x:</td>
+        <td align="center">:heavy_check_mark:</td>
+        <td align="center">:heavy_multiplication_x:</td>
+        <td align="center">:heavy_check_mark:</td>
+    </tr>
+    <tr>
+        <td><a href = "models/anomaly_detection/micronet_medium/tflite_int8">MicroNet Medium INT8</a></td>
+        <td align="center">INT8</td>
+        <td align="center">TensorFlow Lite</td>
+        <td align="center">:heavy_multiplication_x:</td>
+        <td align="center">:heavy_check_mark:</td>
+        <td align="center">:heavy_multiplication_x:</td>
+        <td align="center">:heavy_check_mark:</td>
+    </tr>
+    <tr>
+        <td><a href = "models/anomaly_detection/micronet_small/tflite_int8">MicroNet Small INT8</a></td>
+        <td align="center">INT8</td>
+        <td align="center">TensorFlow Lite</td>
+        <td align="center">:heavy_multiplication_x:</td>
+        <td align="center">:heavy_check_mark:</td>
+        <td align="center">:heavy_multiplication_x:</td>
+        <td align="center">:heavy_check_mark:</td>
+    </tr>
+</table>
 
 ## Image Classification
 
@@ -137,6 +177,33 @@
         <td align="center">:heavy_check_mark:</td>
         <td align="center">:heavy_check_mark:</td>
     </tr>
+    <tr>
+        <td><a href = "models/keyword_spotting/micronet_large/tflite_int8">MicroNet Large INT8</a></td>
+        <td align="center">INT8</td>
+        <td align="center">TensorFlow Lite</td>
+        <td align="center">:heavy_multiplication_x:</td>
+        <td align="center">:heavy_check_mark:</td>
+        <td align="center">:heavy_multiplication_x:</td>
+        <td align="center">:heavy_check_mark:</td>
+    </tr>
+    <tr>
+        <td><a href = "models/keyword_spotting/micronet_medium/tflite_int8">MicroNet Medium INT8</a></td>
+        <td align="center">INT8</td>
+        <td align="center">TensorFlow Lite</td>
+        <td align="center">:heavy_multiplication_x:</td>
+        <td align="center">:heavy_check_mark:</td>
+        <td align="center">:heavy_multiplication_x:</td>
+        <td align="center">:heavy_check_mark:</td>
+    </tr>
+    <tr>
+        <td><a href = "models/keyword_spotting/micronet_small/tflite_int8">MicroNet Small INT8</a></td>
+        <td align="center">INT8</td>
+        <td align="center">TensorFlow Lite</td>
+        <td align="center">:heavy_multiplication_x:</td>
+        <td align="center">:heavy_check_mark:</td>
+        <td align="center">:heavy_multiplication_x:</td>
+        <td align="center">:heavy_check_mark:</td>
+    </tr>
 </table>
 
 ## Object Detection
@@ -202,6 +269,7 @@
         <td align="center">:heavy_check_mark:</td>
     </tr>
 </table>
+
 
 ### Key
 * :heavy_check_mark: - Will run on this platform.
