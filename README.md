@@ -260,6 +260,15 @@
         <th width="100">Ethos U</th>
     </tr>
     <tr>
+        <td><a href="models/speech_recognition/wav2letter/tflite_pruned_int8">Wav2letter Pruned INT8</a></td>
+        <td align="center">INT8</td>
+        <td align="center">TensorFlow Lite</td>
+        <td align="center">:heavy_check_mark:</td>
+        <td align="center">:heavy_check_mark:</td>
+        <td align="center">:heavy_check_mark:</td>
+        <td align="center">:heavy_check_mark:</td>
+    </tr>
+    <tr>
         <td><a href="models/speech_recognition/wav2letter/tflite_int8">Wav2letter INT8</a></td>
         <td align="center">INT8</td>
         <td align="center">TensorFlow Lite</td>
