@@ -1,5 +1,5 @@
 # Model Zoo 
-![version](https://img.shields.io/badge/version-20.12-0091BD)
+![version](https://img.shields.io/badge/version-21.05-0091BD)
 > A collection of machine learning models optimized for Arm IP.
 
 ## Anomaly Detection
