@@ -280,6 +280,47 @@
 </table>
 
 
+## Visual Wake Words
+
+<table>
+    <tr>
+        <th width="250">Network</th>
+        <th width="100">Type</th>
+        <th width="160">Framework</th>
+        <th width="100">Cortex-A</th>
+        <th width="100">Cortex-M</th>
+        <th width="100">Mali GPU</th>
+        <th width="100">Ethos U</th>
+    </tr>
+    <tr>
+        <td><a href = "models/visual_wake_words/micronet_vww4/tflite_int8">MicroNet VWW-4 INT8</a></td>
+        <td align="center">INT8</td>
+        <td align="center">TensorFlow Lite</td>
+        <td align="center">:heavy_multiplication_x:</td>
+        <td align="center">:heavy_check_mark:</td>
+        <td align="center">:heavy_multiplication_x:</td>
+        <td align="center">:heavy_multiplication_x:</td>
+    </tr>
+    <tr>
+        <td><a href = "models/visual_wake_words/micronet_vww3/tflite_int8">MicroNet VWW-3 INT8</a></td>
+        <td align="center">INT8</td>
+        <td align="center">TensorFlow Lite</td>
+        <td align="center">:heavy_multiplication_x:</td>
+        <td align="center">:heavy_check_mark:</td>
+        <td align="center">:heavy_multiplication_x:</td>
+        <td align="center">:heavy_multiplication_x:</td>
+    </tr>
+    <tr>
+        <td><a href = "models/visual_wake_words/micronet_vww2/tflite_int8">MicroNet VWW-2 INT8</a></td>
+        <td align="center">INT8</td>
+        <td align="center">TensorFlow Lite</td>
+        <td align="center">:heavy_multiplication_x:</td>
+        <td align="center">:heavy_check_mark:</td>
+        <td align="center">:heavy_multiplication_x:</td>
+        <td align="center">:heavy_multiplication_x:</td>
+    </tr>
+</table>
+
 ### Key
 * :heavy_check_mark: - Will run on this platform.
 * :heavy_multiplication_x: - Will not run on this platform.

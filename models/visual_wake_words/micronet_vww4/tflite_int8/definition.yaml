@@ -1,0 +1,45 @@
+benchmark:
+  Visual Wake Words:
+    Accuracy: '82.19682'
+description: 'This is a fully quantized version (asymmetrical int8) of the MicroNet
+  VWW-4 model developed by Arm, from the MicroNets paper. It is trained on the ''Visual
+  Wake Words'' dataset, more information can be found here: https://arxiv.org/pdf/1906.05721.pdf.'
+license:
+- Apache-2.0
+network:
+  file_size_bytes: 490336
+  filename: vww4_128_128_INT8.tflite
+  framework: TensorFlow Lite
+  hash:
+    algorithm: sha1
+    value: b2d7f5fab21ae0934b76637348041a0aa5113ef6
+  provenance: https://arxiv.org/pdf/2010.11267.pdf
+network_parameters:
+  input_nodes:
+  - description: A 128x128 input image.
+    example_input:
+      path: models/visual_wake_words/micronet_vww4/tflite_int8/testing_input/input
+    name: input
+    shape:
+    - 1
+    - 128
+    - 128
+    - 1
+  output_nodes:
+  - description: Per-class confidence across the two classes (0=no person present,
+      1=person present).
+    name: Identity
+    shape:
+    - 1
+    - 2
+    test_output_path: models/visual_wake_words/micronet_vww4/tflite_int8/testing_output/Identity
+operators:
+  TensorFlow Lite:
+  - ADD
+  - AVERAGE_POOL_2D
+  - CONV_2D
+  - DEPTHWISE_CONV_2D
+  - PAD
+  - RELU6
+  - RESHAPE
+paper: https://arxiv.org/pdf/2010.11267.pdf
