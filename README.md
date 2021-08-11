@@ -79,6 +79,24 @@
         <th width="100">Ethos U</th>
     </tr>
     <tr>
+        <td><a href = "models/keyword_spotting/ds_cnn_large/tflite_clustered_int8">DS-CNN Clustered INT8 *</a></td>
+        <td align="center">INT8</td>
+        <td align="center">TensorFlow Lite</td>
+        <td align="centerq">:heavy_check_mark:</td>
+        <td align="center">:heavy_check_mark:</td>
+        <td align="center">:heavy_check_mark:</td>
+        <td align="center">:heavy_check_mark:</td>
+    </tr>
+    <tr>
+        <td><a href = "models/keyword_spotting/ds_cnn_large/tflite_clustered_fp32">DS-CNN Clustered FP32 *</a></td>
+        <td align="center">FP32</td>
+        <td align="center">TensorFlow Lite</td>
+        <td align="center">:heavy_check_mark:</td>
+        <td align="center">:heavy_multiplication_x:</td>
+        <td align="center">:heavy_check_mark:</td>
+        <td align="center">:heavy_multiplication_x:</td>
+    </tr>
+    <tr>
         <td><a href="models/keyword_spotting/cnn_large/tflite_int8">CNN Large INT8 *</a></td>
         <td align="center">INT8</td>
         <td align="center">TensorFlow Lite</td>
@@ -125,24 +143,6 @@
     </tr>
     <tr>
         <td><a href="models/keyword_spotting/dnn_small/tflite_int8">DNN Small INT8 *</a></td>
-        <td align="center">INT8</td>
-        <td align="center">TensorFlow Lite</td>
-        <td align="center">:heavy_check_mark:</td>
-        <td align="center">:heavy_check_mark:</td>
-        <td align="center">:heavy_check_mark:</td>
-        <td align="center">:heavy_check_mark:</td>
-    </tr>
-    <tr>
-        <td><a href="models/keyword_spotting/ds_cnn_large/tflite_clustered_fp32">DS-CNN Clustered FP32</a></td>
-        <td align="center">FP32</td>
-        <td align="center">TensorFlow Lite</td>
-        <td align="center">:heavy_check_mark:</td>
-        <td align="center">:heavy_multiplication_x:</td>
-        <td align="center">:heavy_check_mark:</td>
-        <td align="center">:heavy_multiplication_x:</td>
-    </tr>
-    <tr>
-        <td><a href="models/keyword_spotting/ds_cnn_large/tflite_clustered_int8">DS-CNN Clustered INT8</a></td>
         <td align="center">INT8</td>
         <td align="center">TensorFlow Lite</td>
         <td align="center">:heavy_check_mark:</td>
