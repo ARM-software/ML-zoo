@@ -56,6 +56,15 @@
         <th width="100">Ethos U</th>
     </tr>
     <tr>
+        <td><a href="models/image_classification/mobilenet_v2_1.0_224/tflite_int8">MobileNet v2 1.0 224 INT8 *</a></td>
+        <td align="center">INT8</td>
+        <td align="center">TensorFlow Lite</td>
+        <td align="center">:heavy_check_mark:</td>
+        <td align="center">:heavy_check_mark:</td>
+        <td align="center">:heavy_check_mark:</td>
+        <td align="center">:heavy_check_mark:</td>
+    </tr>
+    <tr>
         <td><a href="models/image_classification/mobilenet_v2_1.0_224/tflite_uint8">MobileNet v2 1.0 224 UINT8</a></td>
         <td align="center">UINT8</td>
         <td align="center">TensorFlow Lite</td>
