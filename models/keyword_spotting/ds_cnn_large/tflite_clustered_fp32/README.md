@@ -10,21 +10,17 @@ This is a clustered (32 clusters, kmeans++ centroid initialization) and retraine
 ### Class Labels
 The class labels associated with this model can be downloaded by running the script `get_class_labels.sh`.
 
+### Model Recreation Code
+Code to recreate this model can be found here: https://github.com/ARM-software/ML-examples/tree/master/tflu-kws-cortex-m.
+
 ## Network Information
 | Network Information |  Value         |
-|---------------------|------------------|
+|---------------------|----------------|
 |  Framework          | TensorFlow Lite |
-|  SHA-1 Hash         | a6f4fa3e253125499a1e77aa1010c943e72af568 |
-|  Size (Bytes)       | 1649816 |
+|  SHA-1 Hash         | d9af9829a2363c21fd6158c7bc425d0b635eb55c |
+|  Size (Bytes)       | 1652648 |
 |  Provenance         | The original model (before clustering and quantization) is a pretrained checkpoint based on https://github.com/ARM-software/ML-KWS-for-MCU |
 |  Paper              | https://arxiv.org/abs/1711.07128 |
-
-## Accuracy
-Dataset: Google Speech Commands
-
-| Metric | Value |
-|--------|-------|
-| Top 1 Accuracy | 0.9506 |
 
 ## Performance
 | Platform | Optimized |
@@ -38,7 +34,12 @@ Dataset: Google Speech Commands
 * :heavy_check_mark: - Will run on this platform.
 * :heavy_multiplication_x: - Will not run on this platform.
 
+## Accuracy
+Dataset: Google Speech Commands Test Set
 
+| Metric | Value |
+|--------|-------|
+| Top 1 Accuracy | 0.9495 |
 
 ## Optimizations
 | Optimization |  Value  |
@@ -47,11 +48,29 @@ Dataset: Google Speech Commands
 | Cluster Initialization | K-Means |
 
 ## Network Inputs
-| Input Node Name |  Shape  | Description |
-|-----------------|---------|-------------|
-| input_4 | (1, 1, 49, 10) | The input is a processed MFCCs of shape (1,1,49,10) |
+<table>
+    <tr>
+        <th width="200">Input Node Name</th>
+        <th width="100">Shape</th>
+        <th width="300">Description</th>
+    </tr>
+    <tr>
+        <td>input</td>
+        <td>(1, 490)</td>
+        <td>The input is a processed MFCCs of shape (1,490)</td> 
+    </tr>
+</table>
 
 ## Network Outputs
-| Output Node Name |  Shape  | Description |
-|------------------|---------|-------------|
-| Identity | (1, 12) | The probability on 12 keywords. |
+<table>
+    <tr>
+        <th width="200">Output Node Name</th>
+        <th width="100">Shape</th>
+        <th width="300">Description</th>
+    </tr>
+    <tr>
+        <td>Identity</td>
+        <td>(1, 12)</td>
+        <td>The probability on 12 keywords.</td> 
+    </tr>
+</table>
