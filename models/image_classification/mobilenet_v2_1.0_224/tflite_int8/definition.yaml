@@ -1,0 +1,44 @@
+benchmark:
+  ILSVRC 2012:
+    top-1-accuracy: '69.68'
+description: "INT8 quantised version of MobileNet v2 model. Trained on ImageNet."
+license:
+- Apache-2.0
+network:
+  file_size_bytes: 4020936
+  filename: mobilenet_v2_1.0_224_INT8.tflite
+  framework: TensorFlow Lite
+  hash:
+    algorithm: sha1
+    value: 8de7996dfeadb5ab6f09e3114f3905fd03879eee
+  provenance: https://arxiv.org/pdf/1801.04381.pdf
+network_parameters:
+  input_nodes:
+  - description: Single 224x224 RGB image with INT8 values between -128 and 127
+    example_input:
+      path: models/image_classification/mobilenet_v2_1.0_224/tflite_int8/testing_input/tfl.quantize
+    name: tfl.quantize
+    shape:
+    - 1
+    - 224
+    - 224
+    - 3
+  output_nodes:
+  - description: Per-class confidence for 1001 ImageNet classes
+    name: MobilenetV2/Predictions/Reshape_11
+    shape:
+    - 1
+    - 1001
+    test_output_path: models/image_classification/mobilenet_v2_1.0_224/tflite_int8/testing_output/MobilenetV2/Predictions/Reshape_11
+operators:
+  TensorFlow Lite:
+  - ADD
+  - AVERAGE_POOL_2D
+  - CONV_2D
+  - DEPTHWISE_CONV_2D
+  - DEQUANTIZE
+  - QUANTIZE
+  - RELU6
+  - RESHAPE
+  - SOFTMAX
+paper: https://arxiv.org/pdf/1801.04381.pdf
