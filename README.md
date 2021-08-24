@@ -91,7 +91,7 @@
         <td><a href = "models/keyword_spotting/ds_cnn_large/tflite_clustered_int8">DS-CNN Clustered INT8 *</a></td>
         <td align="center">INT8</td>
         <td align="center">TensorFlow Lite</td>
-        <td align="centerq">:heavy_check_mark:</td>
+        <td align="center">:heavy_check_mark:</td>
         <td align="center">:heavy_check_mark:</td>
         <td align="center">:heavy_check_mark:</td>
         <td align="center">:heavy_check_mark:</td>
