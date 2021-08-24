@@ -1,0 +1,7 @@
+tensorflow==2.5
+pandas==1.0.5
+librosa
+tensorflow_model_optimization
+tqdm
+progressbar2
+sox==1.3.7
