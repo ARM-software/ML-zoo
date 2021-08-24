@@ -19,7 +19,7 @@
 git clone --depth 1 https://github.com/tensorflow/models.git ./tf_models
 cp tf_models/research/object_detection/data/mscoco_label_map.pbtxt .
 
-python scripts/export_labels.py --path mscoco_label_map.pbtxt
+python scripts/export_labels.py --path mscoco_label_map.pbtxt --num_classes 90
 tr -d \" < temp.txt > labelmapping.txt
 rm -rf temp.txt mscoco_label_map.pbtxt
 rm -rf ./tf_models

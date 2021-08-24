@@ -15,11 +15,15 @@
 # limitations under the License.
 
 #!/usr/bin/env bash
+wget -nc http://images.cocodataset.org/annotations/annotations_trainval2017.zip
+unzip -n annotations_trainval2017.zip
 
-git clone --depth 1 https://github.com/tensorflow/models.git ./tf_models
-cp tf_models/research/object_detection/data/mscoco_label_map.pbtxt .
+python3.7 -m venv venv
 
-python scripts/export_labels.py --path mscoco_label_map.pbtxt --num_classes 90
-tr -d \" < temp.txt > labelmapping.txt
-rm -rf temp.txt mscoco_label_map.pbtxt
-rm -rf ./tf_models
+source venv/bin/activate
+pip install --upgrade pip
+pip install -r requirements.txt
+
+pip install tensorflow==2.5.0
+
+python benchmark_model.py --path ssd_mobilenet_v1.tflite
