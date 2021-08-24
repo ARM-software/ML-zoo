@@ -16,7 +16,6 @@
 
 import argparse
 import collections
-import sys
 
 def read_label_map(label_map_path):
     item_id = None
@@ -42,12 +41,16 @@ def read_label_map(label_map_path):
 
     return items
 
-def convert_dictionary_to_list(d):
+def convert_dictionary_to_list(d, num_classes):
     output_list = []
     # order dictionary by keys
     d = collections.OrderedDict(sorted(d.items()))
-    for k, v in d.items():
-        output_list.append(v)
+
+    for c in range(num_classes):
+        if c + 1 in d:
+            output_list.append(d[c + 1])
+        else:
+            output_list.append('')
 
     return output_list
 
@@ -55,11 +58,12 @@ def convert_dictionary_to_list(d):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Process ImageNet labels.")
     parser.add_argument("--path", type=str, required=True)
+    parser.add_argument("--num_classes", type=int, required=True)
 
     args = parser.parse_args()
 
     items = read_label_map(args.path)
-    items = convert_dictionary_to_list(items)
+    items = convert_dictionary_to_list(items, args.num_classes)
 
     with open("temp.txt", "w") as f:
         for item in items:

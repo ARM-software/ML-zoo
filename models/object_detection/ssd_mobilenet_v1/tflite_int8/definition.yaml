@@ -1,0 +1,57 @@
+benchmark:
+  COCO 2017 Validation:
+    mAP: '0.234'
+description: SSD MobileNet v1 is a object detection network, that localizes and identifies
+  objects in an input image. This is a TF Lite quantized version that takes a 300x300
+  input image and outputs detections for this image. This model is converted from
+  FP32 to INT8 using post-training quantization.
+license:
+- Apache-2.0
+network:
+  file_size_bytes: 7311392
+  filename: ssd_mobilenet_v1.tflite
+  framework: TensorFlow Lite
+  hash:
+    algorithm: sha1
+    value: fef68428bd439b70eb983b57d6a342871fa0deaa
+  provenance: https://arxiv.org/abs/1512.02325
+network_parameters:
+  input_nodes:
+  - description: A resized and normalized input image.
+    example_input:
+      path: models/object_detection/ssd_mobilenet_v1/tflite_int8/testing_input/tfl.quantize
+    name: tfl.quantize
+    shape:
+    - 1
+    - 300
+    - 300
+    - 3
+  output_nodes:
+  - description: The y1, x1, y2, x2 coordinates of the bounding boxes for each detection
+    name: TFLite_Detection_PostProcess:01
+    shape: []
+    test_output_path: models/object_detection/ssd_mobilenet_v1/tflite_int8/testing_output/TFLite_Detection_PostProcess:01
+  - description: The class of each detection
+    name: TFLite_Detection_PostProcess:02
+    shape: []
+    test_output_path: models/object_detection/ssd_mobilenet_v1/tflite_int8/testing_output/TFLite_Detection_PostProcess:02
+  - description: The probability score for each classification
+    name: TFLite_Detection_PostProcess:03
+    shape: []
+    test_output_path: models/object_detection/ssd_mobilenet_v1/tflite_int8/testing_output/TFLite_Detection_PostProcess:03
+  - description: A vector containing a number corresponding to the number of detections
+    name: TFLite_Detection_PostProcess:04
+    shape: []
+    test_output_path: models/object_detection/ssd_mobilenet_v1/tflite_int8/testing_output/TFLite_Detection_PostProcess:04
+operators:
+  TensorFlow Lite:
+  - CONCATENATION
+  - CONV_2D
+  - CUSTOM
+  - DEPTHWISE_CONV_2D
+  - DEQUANTIZE
+  - LOGISTIC
+  - QUANTIZE
+  - RELU6
+  - RESHAPE
+paper: https://arxiv.org/abs/1512.02325
