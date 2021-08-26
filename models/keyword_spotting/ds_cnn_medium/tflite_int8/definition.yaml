@@ -1,6 +1,6 @@
 benchmark:
   Google Speech Commands test set:
-    Accuracy: 93.35%
+    Accuracy: 0.934
 description: 'This is a fully quantized version (asymmetrical int8) of the DS-CNN
   Medium model developed by Arm, with training checkpoints, from the Hello Edge paper.
   Code to recreate this model can be found here: https://github.com/ARM-software/ML-examples/tree/master/tflu-kws-cortex-m'

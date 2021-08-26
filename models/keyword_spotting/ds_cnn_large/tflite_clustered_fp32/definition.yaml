@@ -1,6 +1,6 @@
 benchmark:
   SpeechCommands:
-    top_1_accuracy: 0.9495
+    top_1_accuracy: 0.950
 description: 'This is a clustered (32 clusters, kmeans++ centroid initialization)
   and retrained (fine-tuned) FP32 version of the DS-CNN Large model developed by Arm
   from the Hello Edge paper. Code for the original DS-CNN implementation can be found

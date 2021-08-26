@@ -1,6 +1,6 @@
 benchmark:
   SpeechCommands:
-    top_1_accuracy: 0.9401
+    top_1_accuracy: 0.940
 description: 'This is a clustered (32 clusters, kmeans++ centroid initialization),
   retrained (fine-tuned) and fully quantized version (INT8) of the DS-CNN Large model
   developed by Arm from the Hello Edge paper. Code for the original DS-CNN implementation

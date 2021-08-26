@@ -39,7 +39,7 @@ Dataset: LibriSpeech
 
 | Metric | Value |
 |--------|-------|
-| LER | 0.07831 |
+| LER | 0.0783 |
 
 ## Optimizations
 | Optimization |  Value  |

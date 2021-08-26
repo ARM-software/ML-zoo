@@ -1,6 +1,6 @@
 benchmark:
   LibriSpeech:
-    LER: 0.07831443101167679
+    LER: 0.0783
 description: Wav2letter is a convolutional speech recognition neural network. This
   implementation was created by Arm, pruned to 50% sparisty, fine-tuned and quantized
   using the TensorFlow Model Optimization Toolkit.

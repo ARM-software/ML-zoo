@@ -25,7 +25,7 @@ A guide on how to deploy this model using the Arm NN SDK can be found [here](htt
 ## Performance
 | Platform | Optimized |
 |----------|:---------:|
-| Cortex-A |:heavy_check_mark:         |
+| Cortex-A |:heavy_multiplication_x:         |
 | Cortex-M |:heavy_multiplication_x:         |
 | Mali GPU |:heavy_check_mark:         |
 | Ethos U  |:heavy_check_mark:         |

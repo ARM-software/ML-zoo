@@ -1,6 +1,6 @@
 benchmark:
   Google Speech Commands test set:
-    Accuracy: 96.48%
+    Accuracy: 0.965
 description: This is a fully quantized version (asymmetrical int8) of the MicroNet
   Large model developed by Arm, from the MicroNets paper. This model is trained on
   the 'Google Speech Commands' dataset.

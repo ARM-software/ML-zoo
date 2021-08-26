@@ -24,7 +24,7 @@ Dataset: Librispeech
 
 | Metric | Value |
 |--------|-------|
-| Ler | 0.08771 |
+| Ler | 0.0877 |
 
 ## Performance
 | Platform | Optimized |

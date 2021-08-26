@@ -30,7 +30,7 @@ Dataset: Coco Validation 2017
 
 | Metric | Value |
 |--------|-------|
-| mAP | 0.21 |
+| mAP | 0.210 |
 
 ## Performance
 | Platform | Optimized |

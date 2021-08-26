@@ -1,6 +1,6 @@
 benchmark:
   DCASE 2020 Task 2 Slide rail:
-    AUC: 0.9548
+    AUC: 0.955
 description: This is a fully quantized version (asymmetrical int8) of the MicroNet
   Small model developed by Arm, from the MicroNets paper. It is trained on the 'slide
   rail' task from http://dcase.community/challenge2020/task-unsupervised-detection-of-anomalous-sounds.

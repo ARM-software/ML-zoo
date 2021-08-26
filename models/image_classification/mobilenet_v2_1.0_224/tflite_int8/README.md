@@ -39,7 +39,7 @@ Dataset: ILSVRC 2012
 
 | Metric | Value |
 |--------|-------|
-| Top 1 Accuracy | 69.68 |
+| Top 1 Accuracy | 0.697 |
 
 ## Optimizations
 | Optimization |  Value  |
