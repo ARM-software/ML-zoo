@@ -24,8 +24,8 @@ The class labels associated with this model can be created by running the script
 |----------|:---------:|
 | Cortex-A |:heavy_multiplication_x:         |
 | Cortex-M |:heavy_check_mark:         |
-| Mali GPU |:heavy_multiplication_x:         |
-| Ethos U  |:heavy_multiplication_x:         |
+| Mali GPU |:heavy_check_mark:         |
+| Ethos U  |:heavy_check_mark:         |
 
 ### Key
 * :heavy_check_mark: - Will run on this platform.

@@ -1,5 +1,6 @@
+
 # Model Zoo
-![version](https://img.shields.io/badge/version-21.05-0091BD)
+![version](https://img.shields.io/badge/version-21.08-0091BD)
 > A collection of machine learning models optimized for Arm IP.
 
 
@@ -22,7 +23,7 @@
         <td align="center">TensorFlow Lite</td>
         <td align="center">:heavy_multiplication_x:</td>
         <td align="center">:heavy_check_mark:</td>
-        <td align="center">:heavy_multiplication_x:</td>
+        <td align="center">:heavy_check_mark:</td>
         <td align="center">:heavy_check_mark:</td>
         <td align="center">0.968</td>
     </tr>
@@ -32,7 +33,7 @@
         <td align="center">TensorFlow Lite</td>
         <td align="center">:heavy_multiplication_x:</td>
         <td align="center">:heavy_check_mark:</td>
-        <td align="center">:heavy_multiplication_x:</td>
+        <td align="center">:heavy_check_mark:</td>
         <td align="center">:heavy_check_mark:</td>
         <td align="center">0.963</td>
     </tr>
@@ -42,7 +43,7 @@
         <td align="center">TensorFlow Lite</td>
         <td align="center">:heavy_multiplication_x:</td>
         <td align="center">:heavy_check_mark:</td>
-        <td align="center">:heavy_multiplication_x:</td>
+        <td align="center">:heavy_check_mark:</td>
         <td align="center">:heavy_check_mark:</td>
         <td align="center">0.955</td>
     </tr>
@@ -216,7 +217,7 @@
         <td align="center">TensorFlow Lite</td>
         <td align="center">:heavy_multiplication_x:</td>
         <td align="center">:heavy_check_mark:</td>
-        <td align="center">:heavy_multiplication_x:</td>
+        <td align="center">:heavy_check_mark:</td>
         <td align="center">:heavy_check_mark:</td>
         <td align="center">0.965</td>
     </tr>
@@ -226,7 +227,7 @@
         <td align="center">TensorFlow Lite</td>
         <td align="center">:heavy_multiplication_x:</td>
         <td align="center">:heavy_check_mark:</td>
-        <td align="center">:heavy_multiplication_x:</td>
+        <td align="center">:heavy_check_mark:</td>
         <td align="center">:heavy_check_mark:</td>
         <td align="center">0.958</td>
     </tr>
@@ -236,7 +237,7 @@
         <td align="center">TensorFlow Lite</td>
         <td align="center">:heavy_multiplication_x:</td>
         <td align="center">:heavy_check_mark:</td>
-        <td align="center">:heavy_multiplication_x:</td>
+        <td align="center">:heavy_check_mark:</td>
         <td align="center">:heavy_check_mark:</td>
         <td align="center">0.953</td>
     </tr>
@@ -268,8 +269,8 @@
         <td align="center">0.210</td>
     </tr>
     <tr>
-        <td><a href="models/object_detection/ssd_mobilenet_v1/tflite_uint8">SSD MobileNet v1 INT8 *</a></td>
-        <td align="center">UINT8</td>
+        <td><a href="models/object_detection/ssd_mobilenet_v1/tflite_int8">SSD MobileNet v1 INT8 *</a></td>
+        <td align="center">INT8</td>
         <td align="center">TensorFlow Lite</td>
         <td align="center">:heavy_check_mark:</td>
         <td align="center">:heavy_multiplication_x:</td>
@@ -357,8 +358,8 @@
         <td align="center">TensorFlow Lite</td>
         <td align="center">:heavy_multiplication_x:</td>
         <td align="center">:heavy_check_mark:</td>
-        <td align="center">:heavy_multiplication_x:</td>
-        <td align="center">:heavy_multiplication_x:</td>
+        <td align="center">:heavy_check_mark:</td>
+        <td align="center">:heavy_check_mark:</td>
         <td align="center">0.768</td>
     </tr>
     <tr>
@@ -367,8 +368,8 @@
         <td align="center">TensorFlow Lite</td>
         <td align="center">:heavy_multiplication_x:</td>
         <td align="center">:heavy_check_mark:</td>
-        <td align="center">:heavy_multiplication_x:</td>
-        <td align="center">:heavy_multiplication_x:</td>
+        <td align="center">:heavy_check_mark:</td>
+        <td align="center">:heavy_check_mark:</td>
         <td align="center">0.855</td>
     </tr>
     <tr>
@@ -377,8 +378,8 @@
         <td align="center">TensorFlow Lite</td>
         <td align="center">:heavy_multiplication_x:</td>
         <td align="center">:heavy_check_mark:</td>
-        <td align="center">:heavy_multiplication_x:</td>
-        <td align="center">:heavy_multiplication_x:</td>
+        <td align="center">:heavy_check_mark:</td>
+        <td align="center">:heavy_check_mark:</td>
         <td align="center">0.822</td>
     </tr>
 </table>
