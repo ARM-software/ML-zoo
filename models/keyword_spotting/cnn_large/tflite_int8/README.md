@@ -27,7 +27,7 @@ Dataset: Google Speech Commands Test Set
 
 | Metric | Value |
 |--------|-------|
-| Accuracy | 92.92% |
+| Accuracy | 0.929 |
 
 ## Performance
 | Platform | Optimized |
@@ -40,7 +40,6 @@ Dataset: Google Speech Commands Test Set
 ### Key
 * :heavy_check_mark: - Will run on this platform.
 * :heavy_multiplication_x: - Will not run on this platform.
-
 
 
 ## Optimizations

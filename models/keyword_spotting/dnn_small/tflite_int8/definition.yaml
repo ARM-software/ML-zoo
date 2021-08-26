@@ -1,6 +1,6 @@
 benchmark:
   Google Speech Commands test set:
-    Accuracy: 82.70%
+    Accuracy: 0.827
 description: 'This is a fully quantized version (asymmetrical int8) of the DNN Small
   model developed by Arm, with training checkpoints, from the Hello Edge paper. Code
   to recreate this model can be found here: https://github.com/ARM-software/ML-examples/tree/master/tflu-kws-cortex-m'

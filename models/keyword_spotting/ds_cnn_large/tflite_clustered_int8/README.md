@@ -25,7 +25,7 @@ Code to recreate this model can be found here: https://github.com/ARM-software/M
 ## Performance
 | Platform | Optimized |
 |----------|:---------:|
-| Cortex-A |:heavy_check_mark:         |
+| Cortex-A |:heavy_multiplication_x:         |
 | Cortex-M |:heavy_check_mark:         |
 | Mali GPU |:heavy_check_mark:         |
 | Ethos U  |:heavy_check_mark:         |
@@ -39,7 +39,7 @@ Dataset: Google Speech Commands Test Set
 
 | Metric | Value |
 |--------|-------|
-| Top 1 Accuracy | 0.9401 |
+| Top 1 Accuracy | 0.940 |
 
 ## Optimizations
 | Optimization |  Value  |

@@ -1,6 +1,6 @@
 benchmark:
   ILSVRC 2012:
-    top-1-accuracy: '69.68'
+    top-1-accuracy: 0.697
 description: "INT8 quantised version of MobileNet v2 model. Trained on ImageNet."
 license:
 - Apache-2.0

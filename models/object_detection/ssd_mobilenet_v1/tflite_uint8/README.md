@@ -27,12 +27,12 @@ Dataset: Coco Validation 2017
 
 | Metric | Value |
 |--------|-------|
-| mAP | 0.18 |
+| mAP | 0.180 |
 
 ## Performance
 | Platform | Optimized |
 |----------|:---------:|
-| Cortex-A |:heavy_check_mark:         |
+| Cortex-A |:heavy_multiplication_x:         |
 | Cortex-M |:heavy_multiplication_x:         |
 | Mali GPU |:heavy_check_mark:         |
 | Ethos U  |:heavy_multiplication_x:         |

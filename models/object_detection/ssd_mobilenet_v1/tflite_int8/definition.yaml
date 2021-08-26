@@ -1,6 +1,6 @@
 benchmark:
   COCO 2017 Validation:
-    mAP: '0.234'
+    mAP: 0.234
 description: SSD MobileNet v1 is a object detection network, that localizes and identifies
   objects in an input image. This is a TF Lite quantized version that takes a 300x300
   input image and outputs detections for this image. This model is converted from

@@ -36,7 +36,7 @@ Dataset: Visual Wake Words
 
 | Metric | Value |
 |--------|-------|
-| Accuracy | 76.8 |
+| Accuracy | 0.768 |
 
 ## Optimizations
 | Optimization |  Value  |

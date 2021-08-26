@@ -27,7 +27,7 @@ Dataset: Google Speech Commands Test Set
 
 | Metric | Value |
 |--------|-------|
-| Accuracy | 93.35% |
+| Accuracy | 0.934 |
 
 ## Performance
 | Platform | Optimized |

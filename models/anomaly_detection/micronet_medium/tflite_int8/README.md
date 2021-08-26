@@ -36,7 +36,7 @@ Dataset: Dcase 2020 Task 2 Slide Rail
 
 | Metric | Value |
 |--------|-------|
-| AUC | 0.9632 |
+| AUC | 0.963 |
 
 ## Optimizations
 | Optimization |  Value  |

@@ -27,12 +27,12 @@ Dataset: Google Speech Commands Test Set
 
 | Metric | Value |
 |--------|-------|
-| Accuracy | 94.58% |
+| Accuracy | 0.946 |
 
 ## Performance
 | Platform | Optimized |
 |----------|:---------:|
-| Cortex-A |:heavy_check_mark:         |
+| Cortex-A |:heavy_multiplication_x:         |
 | Cortex-M |:heavy_check_mark:         |
 | Mali GPU |:heavy_check_mark:         |
 | Ethos U  |:heavy_check_mark:         |

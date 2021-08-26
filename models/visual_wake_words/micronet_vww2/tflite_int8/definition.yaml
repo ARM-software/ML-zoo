@@ -1,6 +1,6 @@
 benchmark:
   Visual Wake Words:
-    accuracy: 76.8
+    accuracy: 0.768
 description: 'This is a fully quantized version (asymmetrical int8) of the MicroNet
   VWW-2 model developed by Arm, from the MicroNets paper. It is trained on the ''Visual
   Wake Words'' dataset, more information can be found here: https://arxiv.org/pdf/1906.05721.pdf.'
