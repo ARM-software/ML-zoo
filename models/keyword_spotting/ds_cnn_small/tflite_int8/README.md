@@ -32,10 +32,10 @@ Dataset: Google Speech Commands Test Set
 ## Performance
 | Platform | Optimized |
 |----------|:---------:|
-| Cortex-A |:heavy_check_mark:         |
-| Cortex-M |:heavy_check_mark:         |
-| Mali GPU |:heavy_check_mark:         |
-| Ethos U  |:heavy_check_mark:         |
+| Cortex-A |:heavy_check_mark:          |
+| Cortex-M |:heavy_check_mark: HERO         |
+| Mali GPU |:heavy_check_mark:          |
+| Ethos U  |:heavy_check_mark:          |
 
 ### Key
 * :heavy_check_mark: - Will run on this platform.
