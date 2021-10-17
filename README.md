@@ -11,10 +11,10 @@
         <th width="250">Network</th>
         <th width="100">Type</th>
         <th width="160">Framework</th>
-        <th width="90">Cortex-A</th>
-        <th width="90">Cortex-M</th>
-        <th width="90">Mali GPU</th>
-        <th width="90">Ethos U</th>
+        <th width="120">Cortex-A</th>
+        <th width="120">Cortex-M</th>
+        <th width="120">Mali GPU</th>
+        <th width="120">Ethos U</th>
         <th width="90">Score (AUC)</th>
     </tr>
     <tr>
@@ -58,10 +58,10 @@
         <th width="250">Network</th>
         <th width="100">Type</th>
         <th width="160">Framework</th>
-        <th width="90">Cortex-A</th>
-        <th width="90">Cortex-M</th>
-        <th width="90">Mali GPU</th>
-        <th width="90">Ethos U</th>
+        <th width="120">Cortex-A</th>
+        <th width="120">Cortex-M</th>
+        <th width="120">Mali GPU</th>
+        <th width="120">Ethos U</th>
         <th width="90">Score (Top 1 Accuracy)</th>
     </tr>
     <tr>
@@ -95,10 +95,10 @@
         <th width="250">Network</th>
         <th width="100">Type</th>
         <th width="160">Framework</th>
-        <th width="90">Cortex-A</th>
-        <th width="90">Cortex-M</th>
-        <th width="90">Mali GPU</th>
-        <th width="90">Ethos U</th>
+        <th width="120">Cortex-A</th>
+        <th width="120">Cortex-M</th>
+        <th width="120">Mali GPU</th>
+        <th width="120">Ethos U</th>
         <th width="90">Score (Accuracy)</th>
     </tr>
     <tr>
@@ -185,30 +185,30 @@
         <td><a href="models/keyword_spotting/ds_cnn_large/tflite_int8">DS-CNN Large INT8 *</a></td>
         <td align="center">INT8</td>
         <td align="center">TensorFlow Lite</td>
-        <td align="center">:heavy_multiplication_x:</td>
-        <td align="center">:heavy_check_mark:</td>
-        <td align="center">:heavy_check_mark:</td>
-        <td align="center">:heavy_check_mark:</td>
+        <td align="center">:heavy_multiplication_x: </td>
+        <td align="center">:heavy_check_mark: HERO</td>
+        <td align="center">:heavy_check_mark: </td>
+        <td align="center">:heavy_check_mark: </td>
         <td align="center">0.946</td>
     </tr>
     <tr>
         <td><a href="models/keyword_spotting/ds_cnn_medium/tflite_int8">DS-CNN Medium INT8 *</a></td>
         <td align="center">INT8</td>
         <td align="center">TensorFlow Lite</td>
-        <td align="center">:heavy_check_mark:</td>
-        <td align="center">:heavy_check_mark:</td>
-        <td align="center">:heavy_check_mark:</td>
-        <td align="center">:heavy_check_mark:</td>
+        <td align="center">:heavy_check_mark: </td>
+        <td align="center">:heavy_check_mark: HERO</td>
+        <td align="center">:heavy_check_mark: </td>
+        <td align="center">:heavy_check_mark: </td>
         <td align="center">0.934</td>
     </tr>
     <tr>
         <td><a href="models/keyword_spotting/ds_cnn_small/tflite_int8">DS-CNN Small INT8 *</a></td>
         <td align="center">INT8</td>
         <td align="center">TensorFlow Lite</td>
-        <td align="center">:heavy_check_mark:</td>
-        <td align="center">:heavy_check_mark:</td>
-        <td align="center">:heavy_check_mark:</td>
-        <td align="center">:heavy_check_mark:</td>
+        <td align="center">:heavy_check_mark: </td>
+        <td align="center">:heavy_check_mark: HERO</td>
+        <td align="center">:heavy_check_mark: </td>
+        <td align="center">:heavy_check_mark: </td>
         <td align="center">0.934</td>
     </tr>
     <tr>
@@ -252,10 +252,10 @@
         <th width="250">Network</th>
         <th width="100">Type</th>
         <th width="160">Framework</th>
-        <th width="90">Cortex-A</th>
-        <th width="90">Cortex-M</th>
-        <th width="90">Mali GPU</th>
-        <th width="90">Ethos U</th>
+        <th width="120">Cortex-A</th>
+        <th width="120">Cortex-M</th>
+        <th width="120">Mali GPU</th>
+        <th width="120">Ethos U</th>
         <th width="90">Score (mAP)</th>
     </tr>
     <tr>
@@ -309,10 +309,10 @@
         <th width="250">Network</th>
         <th width="100">Type</th>
         <th width="160">Framework</th>
-        <th width="90">Cortex-A</th>
-        <th width="90">Cortex-M</th>
-        <th width="90">Mali GPU</th>
-        <th width="90">Ethos U</th>
+        <th width="120">Cortex-A</th>
+        <th width="120">Cortex-M</th>
+        <th width="120">Mali GPU</th>
+        <th width="120">Ethos U</th>
         <th width="90">Score (LER)</th>
     </tr>
     <tr>
@@ -346,10 +346,10 @@
         <th width="250">Network</th>
         <th width="100">Type</th>
         <th width="160">Framework</th>
-        <th width="90">Cortex-A</th>
-        <th width="90">Cortex-M</th>
-        <th width="90">Mali GPU</th>
-        <th width="90">Ethos U</th>
+        <th width="120">Cortex-A</th>
+        <th width="120">Cortex-M</th>
+        <th width="120">Mali GPU</th>
+        <th width="120">Ethos U</th>
         <th width="90">Score (Accuracy)</th>
     </tr>
     <tr>
