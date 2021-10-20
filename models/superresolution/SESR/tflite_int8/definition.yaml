@@ -1,0 +1,55 @@
+benchmark:
+  DIV2K:
+    PSNR: 35.00dB
+description: "SESR, super-efficient super resolution (formerly known as FSRCNNv5)\
+  \ is a network aims to generate a high-resolution image from a low-resolution input.\n\
+  Name was changed by ARM developers when they wrote research paper on their technique.\n\
+  The attached int8 fully quantized tflite model achieves 35.00dB PSNR on DIV2K dataset.\
+  \ \nThe model takes 1080p input (in YCbCr, i.e., takes a 1x1920x1080x1 tensor as\
+  \ input) and outputs 4K images (in YCbCr, i.e., 1x3840x2160x1 output).\n Compatability\
+  \ note:\n Please note that SESR is a high-end network operating on 1080p->4K images\
+  \ and runtime memory use of this network requires an end system with at least 100MB\
+  \ of memory available to ensure successful execution.\n We anticipate the network\
+  \ being used in premium devices as part of a camera imaging pipeline providing highest\
+  \ quality digital zoom.\n\n Submitter:\n chen.hayat@arm.com"
+license:
+- Apache-2.0
+network:
+  file_size_bytes: 23680
+  filename: SESR_1080p_to_4K_withD2S_full_int8.tflite
+  framework: TensorFlow Lite
+  hash:
+    algorithm: sha1
+    value: 5abc5f05202aa1b0b9c34c5a978b6aa0a02f7ec5
+  provenance: https://git.research.arm.com/golden-models/super-resolution-model-toolkit/-/tree/shuokai_tf2
+  quality: Optimised
+network_parameters:
+  input_nodes:
+  - description: 'Low-resolution input: 1080p (in YCbCr, i.e., take a 1x1920x1080x1
+      tensor as input) '
+    example_input:
+      path: models/superresolution/SESR/tflite_int8/testing_input/net_input
+    name: net_input
+    shape:
+    - 1
+    - 1920
+    - 1080
+    - 1
+  output_nodes:
+  - description: 'High-resolution input: 4K images (in YCbCr, i.e., 1x3840x2160x1
+      output).'
+    name: net_output
+    shape:
+    - 1
+    - 3840
+    - 2160
+    - 1
+    test_output_path: models/superresolution/SESR/tflite_int8/testing_output/net_output
+operators:
+  TensorFlow Lite:
+  - ADD
+  - BATCH_TO_SPACE_ND
+  - CONV_2D
+  - RELU
+  - TRANSPOSE
+paper: https://arxiv.org/abs/2103.09404
