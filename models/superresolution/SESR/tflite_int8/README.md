@@ -1,16 +1,14 @@
 # SESR INT8
 
 ## Description
-SESR, super-efficient super resolution (formerly known as FSRCNNv5) is a network aims to generate a high-resolution image from a low-resolution input.
+SESR, super-efficient super resolution is a network aims to generate a high-resolution image from a low-resolution input.
 Name was changed by ARM developers when they wrote research paper on their technique.
 The attached int8 fully quantized tflite model achieves 35.00dB PSNR on DIV2K dataset. 
 The model takes 1080p input (in YCbCr, i.e., takes a 1x1920x1080x1 tensor as input) and outputs 4K images (in YCbCr, i.e., 1x3840x2160x1 output).  
 Compatability note:  
 Please note that SESR is a high-end network operating on 1080p->4K images and runtime memory use of this network requires an end system with at least 100MB of memory available to ensure successful execution.
-We anticipate the network being used in premium devices as part of a camera imaging pipeline providing highest quality digital zoom.
-
- Submitter:
- chen.hayat@arm.com
+We anticipate the network being used in premium devices as part of a camera imaging pipeline providing highest quality digital zoom.  
+Repository for model authors: https://github.com/ARM-software/sesr  
 
 ## License
 [Apache-2.0](https://spdx.org/licenses/Apache-2.0.html)

@@ -1,7 +1,7 @@
 benchmark:
   DIV2K:
     PSNR: 35.00dB
-description: "SESR, super-efficient super resolution (formerly known as FSRCNNv5)\
+description: "SESR, super-efficient super resolution\
   \ is a network aims to generate a high-resolution image from a low-resolution input.\n\
   Name was changed by ARM developers when they wrote research paper on their technique.\n\
   The attached int8 fully quantized tflite model achieves 35.00dB PSNR on DIV2K dataset.\
@@ -11,7 +11,8 @@ description: "SESR, super-efficient super resolution (formerly known as FSRCNNv5
   \ and runtime memory use of this network requires an end system with at least 100MB\
   \ of memory available to ensure successful execution.\n We anticipate the network\
   \ being used in premium devices as part of a camera imaging pipeline providing highest\
-  \ quality digital zoom.\n\n Submitter:\n chen.hayat@arm.com"
+  \ quality digital zoom.\n\
+  \ Repository for model authors: https://github.com/ARM-software/sesr"
 license:
 - Apache-2.0
 network:
