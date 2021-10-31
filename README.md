@@ -245,6 +245,33 @@
 
 **Dataset**: Google Speech Commands Test Set
 
+## Noise Suppression
+
+<table>
+    <tr>
+        <th width="250">Network</th>
+        <th width="100">Type</th>
+        <th width="160">Framework</th>
+        <th width="120">Cortex-A</th>
+        <th width="120">Cortex-M</th>
+        <th width="120">Mali GPU</th>
+        <th width="120">Ethos U</th>
+        <th width="90">Score (Average Pesq)</th>
+    </tr>
+    <tr>
+        <td><a href="models/noise_suppression/RNNoise/tflite_int8">RNNoise INT8 *</a></td>
+        <td align="center">INT8</td>
+        <td align="center">TensorFlow Lite</td>
+        <td align="center">:heavy_check_mark: </td>
+        <td align="center">:heavy_check_mark: </td>
+        <td align="center">:heavy_check_mark: </td>
+        <td align="center">:heavy_check_mark: </td>
+        <td align="center">2.945</td>
+    </tr>
+</table>
+
+**Dataset**: Noisy Speech Database For Training Speech Enhancement Algorithms And Tts Models
+
 ## Object Detection
 
 <table>
