@@ -1,0 +1,108 @@
+benchmark:
+  Noisy speech database for training speech enhancement algorithms and TTS models:
+    Average pesq: '2.945'
+description: "RNNoise is a noise reduction network, that helps to remove noise from\
+  \ audio signals while maintaining any speech. This is a TFLite quantized version\
+  \ that takes traditional signal processing features and outputs gain values that\
+  \ can be used to remove noise from audio. It also detects if voice activity is present.\r\
+  \nThis is a 1 step model trained on Noisy speech database for training speech enhancement\
+  \ algorithms and TTS models that requires hidden states to be fed in at each time\
+  \ step.\r\nDataset license link:https://datashare.ed.ac.uk/handle/10283/2791\r\n\
+  This model is converted from FP32 to INT8 using post-training quantization.
+license:
+- Apache-2.0
+network:
+  file_size_bytes: 113472
+  filename: rnnoise_INT8.tflite
+  framework: TensorFlow Lite
+  hash:
+    algorithm: sha1
+    value: 2d973fe7116e0bc3674f0f3f0f7185ffe105bba5
+  provenance: https://arxiv.org/pdf/1709.08243.pdf
+  quality_level: null
+network_parameters:
+  input_nodes:
+  - description: Pre-processed signal features extracted from 480 values of a 48KHz
+      wav file
+    example_input:
+      path: models/noise_suppression/RNNoise/tflite_int8/testing_input/main_input_int8
+    name: main_input_int8
+    shape:
+    - 1
+    - 1
+    - 42
+  - description: Previous GRU state for the voice activity detection GRU
+    example_input:
+      path: models/noise_suppression/RNNoise/tflite_int8/testing_input/vad_gru_prev_state_int8
+    name: vad_gru_prev_state_int8
+    shape:
+    - 1
+    - 24
+  - description: Previous GRU state for the noise GRU
+    example_input:
+      path: models/noise_suppression/RNNoise/tflite_int8/testing_input/noise_gru_prev_state_int8
+    name: noise_gru_prev_state_int8
+    shape:
+    - 1
+    - 48
+  - description: Previous GRU state for the denoise GRU
+    example_input:
+      path: models/noise_suppression/RNNoise/tflite_int8/testing_input/denoise_gru_prev_state_int8
+    name: denoise_gru_prev_state_int8
+    shape:
+    - 1
+    - 96
+  output_nodes:
+  - description: Next GRU state for the denoise GRU
+    name: Identity_int8
+    shape:
+    - 1
+    - 1
+    - 96
+    test_output_path: models/noise_suppression/RNNoise/tflite_int8/testing_output/Identity_int8
+  - description: Gain values that can be used to remove noise from this audio sample
+    name: Identity_1_int8
+    shape:
+    - 1
+    - 1
+    - 22
+    test_output_path: models/noise_suppression/RNNoise/tflite_int8/testing_output/Identity_1_int8
+  - description: Next GRU state for the noise GRU
+    name: Identity_2_int8
+    shape:
+    - 1
+    - 1
+    - 48
+    test_output_path: models/noise_suppression/RNNoise/tflite_int8/testing_output/Identity_2_int8
+  - description: Next GRU state for the voice activity detection GRU
+    name: Identity_3_int8
+    shape:
+    - 1
+    - 1
+    - 24
+    test_output_path: models/noise_suppression/RNNoise/tflite_int8/testing_output/Identity_3_int8
+  - description: Probability that this audio sample contains voice activity
+    name: Identity_4_int8
+    shape:
+    - 1
+    - 1
+    - 1
+    test_output_path: models/noise_suppression/RNNoise/tflite_int8/testing_output/Identity_4_int8
+operators:
+  TensorFlow Lite:
+  - ADD
+  - CONCATENATION
+  - DEQUANTIZE
+  - FULLY_CONNECTED
+  - LOGISTIC
+  - MUL
+  - PACK
+  - QUANTIZE
+  - RELU
+  - RESHAPE
+  - SPLIT
+  - SPLIT_V
+  - SUB
+  - TANH
+  - UNPACK
+paper: https://arxiv.org/pdf/1709.08243.pdf
