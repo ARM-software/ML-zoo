@@ -348,7 +348,7 @@
         <th width="160">Framework</th>
         <th width="120">Cortex-A</th>
         <th width="120">Cortex-M</th>
-        <th width="120">Mali GPU</th>
+        <th width="125">Mali GPU</th>
         <th width="120">Ethos U</th>
         <th width="90">Score (PSNR)</th>
     </tr>
@@ -358,7 +358,7 @@
         <td align="center">TensorFlow Lite</td>
         <td align="center">:heavy_check_mark: </td>
         <td align="center">:heavy_multiplication_x: </td>
-        <td align="center">:heavy_check_mark: </td>
+        <td align="center">:heavy_check_mark: HERO</td>
         <td align="center">:heavy_multiplication_x: </td>
         <td align="center">35.00dB</td>
     </tr>
