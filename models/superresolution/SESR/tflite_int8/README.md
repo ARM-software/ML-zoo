@@ -29,7 +29,7 @@ This model has a large memory footprint – it will not run on all platforms.
 |----------|:---------:|
 | Cortex-A |:heavy_check_mark:          |
 | Cortex-M |:heavy_multiplication_x:          |
-| Mali GPU |:heavy_check_mark:          |
+| Mali GPU |:heavy_check_mark: HERO         |
 | Ethos U  |:heavy_multiplication_x:          |
 
 ### Key
