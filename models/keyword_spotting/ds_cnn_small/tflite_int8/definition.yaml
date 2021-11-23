@@ -1,18 +1,18 @@
 benchmark:
   Google Speech Commands test set:
-    Accuracy: 0.934
+    Accuracy: 0.935
 description: 'This is a fully quantized version (asymmetrical int8) of the DS-CNN
   Small model developed by Arm, with training checkpoints, from the Hello Edge paper.
   Code to recreate this model can be found here: https://github.com/ARM-software/ML-examples/tree/master/tflu-kws-cortex-m'
 license:
 - Apache-2.0
 network:
-  file_size_bytes: 54464
+  file_size_bytes: 47616
   filename: ds_cnn_s_quantized.tflite
   framework: TensorFlow Lite
   hash:
     algorithm: sha1
-    value: 9083414c5f3d850bae6599a038f711dd1f21c9c7
+    value: cf24429e86a9647b1632c382894bc68d26d34039
   provenance: https://github.com/ARM-software/ML-examples/tree/master/tflu-kws-cortex-m
 network_parameters:
   input_nodes:
