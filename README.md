@@ -185,7 +185,7 @@
         <td><a href="models/keyword_spotting/ds_cnn_large/tflite_int8">DS-CNN Large INT8 *</a></td>
         <td align="center">INT8</td>
         <td align="center">TensorFlow Lite</td>
-        <td align="center">:heavy_multiplication_x: </td>
+        <td align="center">:heavy_check_mark: </td>
         <td align="center">:heavy_check_mark: HERO</td>
         <td align="center">:heavy_check_mark: </td>
         <td align="center">:heavy_check_mark: </td>
@@ -209,7 +209,7 @@
         <td align="center">:heavy_check_mark: HERO</td>
         <td align="center">:heavy_check_mark: </td>
         <td align="center">:heavy_check_mark: </td>
-        <td align="center">0.934</td>
+        <td align="center">0.935</td>
     </tr>
     <tr>
         <td><a href="models/keyword_spotting/micronet_large/tflite_int8">MicroNet Large INT8 </a></td>
