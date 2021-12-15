@@ -1,6 +1,6 @@
 benchmark:
   Google Speech Commands test set:
-    Accuracy: 0.935
+    Accuracy: 93.56%
 description: 'This is a fully quantized version (asymmetrical int8) of the DS-CNN
   Small model developed by Arm, with training checkpoints, from the Hello Edge paper.
   Code to recreate this model can be found here: https://github.com/ARM-software/ML-examples/tree/master/tflu-kws-cortex-m'
@@ -14,6 +14,7 @@ network:
     algorithm: sha1
     value: cf24429e86a9647b1632c382894bc68d26d34039
   provenance: https://github.com/ARM-software/ML-examples/tree/master/tflu-kws-cortex-m
+  quality_level: hero#CORTEX-M
 network_parameters:
   input_nodes:
   - description: The input is a processed MFCCs of shape (1, 490)

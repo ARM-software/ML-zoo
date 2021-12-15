@@ -17,8 +17,8 @@ Code to recreate this model can be found here: https://github.com/ARM-software/M
 | Network Information |  Value         |
 |---------------------|------------------|
 |  Framework          | TensorFlow Lite |
-|  SHA-1 Hash         | c6923b02806224775b58ab9bc11e03e021ff407e |
-|  Size (Bytes)       | 200928 |
+|  SHA-1 Hash         | 740d32adde16948b2ab45e1e8c856de2925a05eb |
+|  Size (Bytes)       | 186288 |
 |  Provenance         | https://github.com/ARM-software/ML-examples/tree/master/tflu-kws-cortex-m |
 |  Paper              | https://arxiv.org/abs/1711.07128 |
 
@@ -27,7 +27,7 @@ Dataset: Google Speech Commands Test Set
 
 | Metric | Value |
 |--------|-------|
-| Accuracy | 0.934 |
+| Accuracy | 0.941 |
 
 ## Performance
 | Platform | Optimized |

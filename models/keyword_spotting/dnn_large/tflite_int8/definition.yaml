@@ -1,19 +1,20 @@
 benchmark:
   Google Speech Commands test set:
-    Accuracy: 0.863
+    Accuracy: 86.26%
 description: 'This is a fully quantized version (asymmetrical int8) of the DNN Large
   model developed by Arm, with training checkpoints, from the Hello Edge paper. Code
   to recreate this model can be found here: https://github.com/ARM-software/ML-examples/tree/master/tflu-kws-cortex-m'
 license:
 - Apache-2.0
 network:
-  file_size_bytes: 502928
+  file_size_bytes: 502272
   filename: dnn_l_quantized.tflite
   framework: TensorFlow Lite
   hash:
     algorithm: sha1
-    value: 16e03dda20ae81dfba6a567e6e7563ca67596969
+    value: 2b1ee34e4c87ba6f24092c7457593227099efaf1
   provenance: https://github.com/ARM-software/ML-examples/tree/master/tflu-kws-cortex-m
+  quality_level: null
 network_parameters:
   input_nodes:
   - description: The input is a processed MFCCs of shape (1, 250)
