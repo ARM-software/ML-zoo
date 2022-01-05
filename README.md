@@ -1,4 +1,3 @@
-
 # Model Zoo
 ![version](https://img.shields.io/badge/version-21.08-0091BD)
 > A collection of machine learning models optimized for Arm IP.
@@ -109,7 +108,7 @@
         <td align="center">:heavy_check_mark: </td>
         <td align="center">:heavy_check_mark: </td>
         <td align="center">:heavy_check_mark: </td>
-        <td align="center">0.929</td>
+        <td align="center">0.931</td>
     </tr>
     <tr>
         <td><a href="models/keyword_spotting/cnn_medium/tflite_int8">CNN Medium INT8 *</a></td>
@@ -119,7 +118,7 @@
         <td align="center">:heavy_check_mark: </td>
         <td align="center">:heavy_check_mark: </td>
         <td align="center">:heavy_check_mark: </td>
-        <td align="center">0.913</td>
+        <td align="center">0.911</td>
     </tr>
     <tr>
         <td><a href="models/keyword_spotting/cnn_small/tflite_int8">CNN Small INT8 *</a></td>
@@ -129,7 +128,7 @@
         <td align="center">:heavy_check_mark: </td>
         <td align="center">:heavy_check_mark: </td>
         <td align="center">:heavy_check_mark: </td>
-        <td align="center">0.914</td>
+        <td align="center">0.912</td>
     </tr>
     <tr>
         <td><a href="models/keyword_spotting/dnn_large/tflite_int8">DNN Large INT8 *</a></td>
@@ -149,7 +148,7 @@
         <td align="center">:heavy_check_mark: </td>
         <td align="center">:heavy_check_mark: </td>
         <td align="center">:heavy_check_mark: </td>
-        <td align="center">0.846</td>
+        <td align="center">0.844</td>
     </tr>
     <tr>
         <td><a href="models/keyword_spotting/dnn_small/tflite_int8">DNN Small INT8 *</a></td>
@@ -159,7 +158,7 @@
         <td align="center">:heavy_check_mark: </td>
         <td align="center">:heavy_check_mark: </td>
         <td align="center">:heavy_check_mark: </td>
-        <td align="center">0.827</td>
+        <td align="center">0.825</td>
     </tr>
     <tr>
         <td><a href="models/keyword_spotting/ds_cnn_large/tflite_clustered_fp32">DS-CNN Clustered FP32 *</a></td>
@@ -199,7 +198,7 @@
         <td align="center">:heavy_check_mark: HERO</td>
         <td align="center">:heavy_check_mark: </td>
         <td align="center">:heavy_check_mark: </td>
-        <td align="center">0.934</td>
+        <td align="center">0.941</td>
     </tr>
     <tr>
         <td><a href="models/keyword_spotting/ds_cnn_small/tflite_int8">DS-CNN Small INT8 *</a></td>

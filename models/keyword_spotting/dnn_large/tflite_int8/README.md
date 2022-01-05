@@ -17,8 +17,8 @@ Code to recreate this model can be found here: https://github.com/ARM-software/M
 | Network Information |  Value         |
 |---------------------|------------------|
 |  Framework          | TensorFlow Lite |
-|  SHA-1 Hash         | 16e03dda20ae81dfba6a567e6e7563ca67596969 |
-|  Size (Bytes)       | 502928 |
+|  SHA-1 Hash         | 2b1ee34e4c87ba6f24092c7457593227099efaf1 |
+|  Size (Bytes)       | 502272 |
 |  Provenance         | https://github.com/ARM-software/ML-examples/tree/master/tflu-kws-cortex-m |
 |  Paper              | https://arxiv.org/abs/1711.07128 |
 
