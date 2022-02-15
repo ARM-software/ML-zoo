@@ -1,0 +1,10 @@
+librosa==0.8.1
+numpy==1.19.5
+tensorboard==2.6.0
+tensorboard-data-server==0.6.1
+tensorboard-plugin-profile==2.5.0
+tensorboard-plugin-wit==1.8.0
+tensorflow==2.4.1
+tensorflow-model-optimization==0.6.0
+tqdm
+jiwer==2.3.0

@@ -361,9 +361,29 @@
         <td align="center">:heavy_check_mark: </td>
         <td align="center">0.0783</td>
     </tr>
+    <tr>
+        <td><a href="models/speech_recognition/tiny_wav2letter/tflite_int8">Tiny Wav2letter INT8 *</a></td>
+        <td align="center">INT8</td>
+        <td align="center">TensorFlow Lite</td>
+        <td align="center">:heavy_check_mark: </td>
+        <td align="center">:heavy_check_mark: </td>
+        <td align="center">:heavy_multiplication_x: </td>
+        <td align="center">:heavy_check_mark: </td>
+        <td align="center">0.0348</td>
+    </tr>
+    <tr>
+        <td><a href="models/speech_recognition/tiny_wav2letter/tflite_pruned_int8">Tiny Wav2letter Pruned INT8 *</a></td>
+        <td align="center">INT8</td>
+        <td align="center">TensorFlow Lite</td>
+        <td align="center">:heavy_check_mark: </td>
+        <td align="center">:heavy_check_mark: </td>
+        <td align="center">:heavy_multiplication_x: </td>
+        <td align="center">:heavy_check_mark: </td>
+        <td align="center">0.0283</td>
+    </tr>
 </table>
 
-**Dataset**: LibriSpeech
+**Dataset**: LibriSpeech, Fluent Speech
 
 ## Superresolution
 
