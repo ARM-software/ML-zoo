@@ -1,0 +1,5 @@
+notebook
+tensorflow>=2.6,<2.8
+tensorflow_model_optimization==0.7.0 
+nltk==3.6.5
+flatbuffers==1.12.0
