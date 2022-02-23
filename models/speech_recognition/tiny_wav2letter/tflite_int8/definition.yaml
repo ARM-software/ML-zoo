@@ -1,0 +1,60 @@
+author_notes: null
+benchmark:
+  benchmark_description: please note that fluent-speech-corpus dataset hosted on Kaggle
+    is a licensed dataset.
+  benchmark_link: https://www.kaggle.com/tommyngx/fluent-speech-corpus
+  benchmark_metrics:
+    LER: '0.0348'
+    WER: '0.1123'
+  benchmark_name: Fluent speech
+description: "Tiny Wav2letter is a tiny version of the original Wav2Letter model.\
+  \ It is a convolutional speech recognition neural network. This implementation was\
+  \ created by Arm, pruned to 50% sparsity, fine-tuned and quantized using the TensorFlow\
+  \ Model Optimization Toolkit.\r\n\r\n"
+license:
+- Apache-2.0
+network:
+  datatype: int8
+  file_size_bytes: 3997112
+  filename: tiny_wav2letter_int8.tflite
+  framework: TensorFlow Lite
+  framework_version: 2.4.1
+  hash:
+    algorithm: sha1
+    value: 13ca2294ba4bbb1f1c6c5e663cb532d58cd76a6b
+  provenance: https://github.com/ARM-software/ML-zoo/tree/master/models/speech_recognition/wav2letter
+  training: LibriSpeech,Mini LibrySpeech,fluent speech
+network_parameters:
+  input_nodes:
+  - description: Speech converted to MFCCs and quantized to INT8
+    example_input:
+      path: models/speech_recognition/tiny_wav2letter/tflite_int8/testing_input/input_1_int8
+    input_datatype: int8
+    name: input_1_int8
+    shape:
+    - 1
+    - 296
+    - 39
+  output_nodes:
+  - description: A tensor of time and class probabilities, that represents the probability
+      of each class at each timestep. Should be passed to a decoder. For example ctc_beam_search_decoder.
+    example_output:
+      path: models/speech_recognition/tiny_wav2letter/tflite_int8/testing_output/Identity_int8
+    name: Identity_int8
+    output_datatype: int8
+    shape:
+    - 1
+    - 1
+    - 148
+    - 29
+network_quality:
+  quality_level: Deployable
+  quality_level_hero_hw: null
+operators:
+  TensorFlow Lite:
+  - CONV_2D
+  - DEQUANTIZE
+  - LEAKY_RELU
+  - QUANTIZE
+  - RESHAPE
+paper: https://arxiv.org/abs/1609.03193
