@@ -1,0 +1,66 @@
+benchmark:
+  benchmark_metrics:
+    Accuracy: 93.39%
+  benchmark_name: Google Speech Commands test set
+description: This is a fully quantized int16 version of the DS-CNN Small model developed
+  by Arm, from the Hello Edge paper.
+license:
+- Apache-2.0
+network:
+  datatype: int16
+  file_size_bytes: 55392
+  filename: ds_cnn_s_quantized_int16.tflite
+  framework: TensorFlow Lite
+  hash:
+    algorithm: sha1
+    value: e82c7d645bec3dec580a096de0a297c6dd9a6463
+  provenance: https://arxiv.org/abs/1711.07128
+  training: Trained by Arm
+network_parameters:
+  input_nodes:
+  - description: The input is a processed MFCCs of shape (1, 490)
+    example_input:
+      path: models/keyword_spotting/ds_cnn_small/model_package_tf/model_archive/TFLite/tflite_int16/testing_input
+      shape:
+      - 1
+      - 490
+      type: int16
+      use_case: Random input for model regression.
+    input_datatype: int16
+    name: serving_default_input:0
+    shape:
+    - 1
+    - 490
+  output_nodes:
+  - description: The probability on 12 keywords.
+    example_output:
+      path: models/keyword_spotting/ds_cnn_small/model_package_tf/model_archive/TFLite/tflite_int16/testing_output
+      shape:
+      - 1
+      - 12
+      type: int16
+      use_case: output for model regression.
+    name: StatefulPartitionedCall:0
+    output_datatype: int16
+    shape:
+    - 1
+    - 12
+network_quality:
+  clustered: false
+  is_vanilla: true
+  pruned: false
+  quality_level: Hero
+  quality_level_hero_hw: cortex_m
+  quantization_default: false
+  quantization_full: true
+  recreate: true
+operators:
+  TensorFlow Lite:
+  - AVERAGE_POOL_2D
+  - CONV_2D
+  - DEPTHWISE_CONV_2D
+  - FULLY_CONNECTED
+  - RELU
+  - RESHAPE
+  - SOFTMAX
+paper: https://arxiv.org/abs/1711.07128

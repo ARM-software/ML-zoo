@@ -1,0 +1,64 @@
+benchmark:
+  benchmark_metrics:
+    accuracy: 92.27%
+  benchmark_name: Google Speech Commands test set
+description: This is a fully quantized int8 version of the CNN Large model developed
+  by Arm, from the Hello Edge paper.
+license:
+- Apache-2.0
+network:
+  datatype: int8
+  file_size_bytes: 484600
+  filename: cnn_l_quantized.tflite
+  framework: TensorFlow Lite
+  hash:
+    algorithm: sha1
+    value: a61ab748ae8f52f78ab568342db67a792c6ecf34
+  provenance: https://arxiv.org/abs/1711.07128
+  training: Trained by Arm
+network_parameters:
+  input_nodes:
+  - description: The input is a processed MFCCs of shape (1, 490)
+    example_input:
+      path: models/keyword_spotting/cnn_large/model_package_tf/model_archive/TFLite/tflite_int8/testing_input/input
+      shape:
+      - 1
+      - 490
+      type: int8
+      use_case: Random input for model regression.
+    input_datatype: int8
+    name: input
+    shape:
+    - 1
+    - 490
+  output_nodes:
+  - description: The probability on 12 keywords.
+    example_output:
+      path: models/keyword_spotting/cnn_large/model_package_tf/model_archive/TFLite/tflite_int8/testing_output/Identity
+      shape:
+      - 1
+      - 12
+      type: int8
+      use_case: output for model regression.
+    name: Identity
+    output_datatype: int8
+    shape:
+    - 1
+    - 12
+network_quality:
+  clustered: false
+  is_vanilla: true
+  pruned: false
+  quality_level: Deployable
+  quality_level_hero_hw: cortex_m
+  quantization_default: false
+  quantization_full: true
+  recreate: true
+operators:
+  TensorFlow Lite:
+  - CONV_2D
+  - FULLY_CONNECTED
+  - RELU
+  - RESHAPE
+  - SOFTMAX
+paper: https://arxiv.org/abs/1711.07128

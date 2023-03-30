@@ -1,0 +1,67 @@
+benchmark:
+  benchmark_metrics:
+    accuracy: 94.76%
+  benchmark_name: Google Speech Commands test set
+description: This is a clustered (32 clusters, kmeans++ centroid initialization)
+  and retrained (fine-tuned) fp32 version of the DS-CNN Large model developed
+  by Arm, from the Hello Edge paper.
+license:
+- Apache-2.0
+network:
+  datatype: fp32
+  file_size_bytes: 1652648
+  filename: ds_cnn_l_clustered_fp32.tflite
+  framework: TensorFlow Lite
+  hash:
+    algorithm: sha1
+    value: d9af9829a2363c21fd6158c7bc425d0b635eb55c
+  provenance: https://arxiv.org/abs/1711.07128
+  training: Trained by Arm
+network_parameters:
+  input_nodes:
+  - description: The input is a processed MFCCs of shape (1, 490)
+    example_input:
+      path: models/keyword_spotting/ds_cnn_large/model_package_tf/model_archive/TFLite/tflite_clustered_fp32/testing_input/input
+      shape:
+      - 1
+      - 490
+      type: fp32
+      use_case: Random input for model regression.
+    input_datatype: fp32
+    name: input
+    shape:
+    - 1
+    - 490
+  output_nodes:
+  - description: The probability on 12 keywords.
+    example_output:
+      path: models/keyword_spotting/ds_cnn_large/model_package_tf/model_archive/TFLite/tflite_clustered_fp32/testing_output/Identity
+      shape:
+      - 1
+      - 12
+      type: fp32
+      use_case: output for model regression.
+    name: Identity
+    output_datatype: fp32
+    shape:
+    - 1
+    - 12
+network_quality:
+  clustered: true
+  is_vanilla: true
+  pruned: false
+  quality_level: Deployable
+  quality_level_hero_hw: cortex_m
+  quantization_default: false
+  quantization_full: false
+  recreate: true
+operators:
+  TensorFlow Lite:
+  - AVERAGE_POOL_2D
+  - CONV_2D
+  - DEPTHWISE_CONV_2D
+  - FULLY_CONNECTED
+  - RELU
+  - RESHAPE
+  - SOFTMAX
+paper: https://arxiv.org/abs/1711.07128
